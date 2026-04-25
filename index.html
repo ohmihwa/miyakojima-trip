@@ -58,7 +58,7 @@ html,body{font-family:'Noto Sans KR',sans-serif;background:var(--sand);color:var
 /* IMAGES */
 .c-imgs{display:flex;gap:6px;padding:4px 13px 6px;overflow-x:auto;scrollbar-width:none;}
 .c-imgs::-webkit-scrollbar{display:none;}
-.c-img{width:140px;height:88px;object-fit:cover;border-radius:8px;flex-shrink:0;}
+
 /* MENU */
 .c-menu{padding:0 13px 6px;}
 .menu-lbl{font-size:10px;font-weight:700;color:var(--oc);margin-bottom:3px;}
@@ -95,7 +95,7 @@ html,body{font-family:'Noto Sans KR',sans-serif;background:var(--sand);color:var
 .sv{font-size:15px;font-weight:700;color:var(--oc);}
 .ss{font-size:10px;color:var(--mu);}
 .cklist{background:#fff;border-radius:11px;overflow:hidden;box-shadow:0 2px 8px rgba(0,0,0,.06);margin-bottom:12px;}
-.ck-hd{padding:10px 13px;font-size:12px;font-weight:700;border-bottom:1px solid var(--bo);}
+.ck-hd{padding:10px 13px;font-size:12px;font-weight:700;border-bottom:1px solid var(--bo);}.ck-hd-section{font-size:11px;font-weight:700;color:var(--mu);padding:14px 4px 5px;letter-spacing:.3px;}
 .ck-row{display:flex;align-items:flex-start;gap:8px;padding:8px 13px;border-bottom:1px solid var(--bo);cursor:pointer;}
 .ck-row:last-child{border-bottom:none;}
 .ck-row:hover,.ck-row:active{background:var(--sand);}
@@ -115,9 +115,9 @@ html,body{font-family:'Noto Sans KR',sans-serif;background:var(--sand);color:var
 .sh-hd.dk{background:linear-gradient(90deg,#9f1239,#e11d48);}
 .sh-hd.kr{background:linear-gradient(90deg,#7c3aed,#a855f7);}
 .sh-list{background:#fff;border-radius:0 0 10px 10px;border:1px solid var(--bo);border-top:none;overflow:hidden;}
-.sh-item{display:flex;align-items:center;gap:8px;padding:8px 13px;border-bottom:1px solid var(--bo);}
+.sh-item{display:flex;align-items:center;gap:10px;padding:9px 13px;border-bottom:1px solid var(--bo);}
 .sh-item:last-child{border-bottom:none;}
-.sh-img{width:48px;height:48px;object-fit:cover;border-radius:6px;flex-shrink:0;}
+
 .sh-info{flex:1;min-width:0;}
 .sh-name{font-size:11px;font-weight:500;}
 .sh-note{font-size:10px;color:var(--mu);}
@@ -146,6 +146,33 @@ html,body{font-family:'Noto Sans KR',sans-serif;background:var(--sand);color:var
 .res-label{font-size:10px;color:var(--mu);width:52px;flex-shrink:0;padding-top:1px;}
 .res-value{font-size:11px;flex:1;color:var(--tx);}
 .res-memo-lbl{font-size:10px;color:var(--mu);margin-bottom:3px;margin-top:6px;}
+.res-id{font-weight:700;color:var(--oc);font-size:12px;}
+.res-prep{color:#065f46;background:#f0fdf4;padding:4px 8px;border-radius:7px;font-size:11px;}
+.res-cash{font-weight:600;font-size:11px;}
+.res-map-btn{display:inline-flex;align-items:center;font-size:10px;color:var(--oc);text-decoration:none;padding:2px 8px;border:1px solid var(--oc);border-radius:7px;margin-left:5px;white-space:nowrap;}
+.res-map-btn:hover{background:var(--oc);color:#fff;}
+.res-label{font-size:10px;color:var(--mu);width:60px;flex-shrink:0;padding-top:2px;font-weight:500;}
+.memo-tx{overflow:hidden;resize:none;}
+.ck-res-card{background:#fff;border-radius:11px;overflow:hidden;box-shadow:0 2px 8px rgba(0,0,0,.06);margin-bottom:8px;border-left:3px solid var(--gr);}
+.ck-res-hd{display:flex;align-items:center;gap:8px;padding:10px 13px;border-bottom:1px solid var(--bo);cursor:pointer;}
+.ck-res-ico{font-size:16px;}
+.ck-res-info{flex:1;}
+.ck-res-name{font-size:12px;font-weight:700;}
+.ck-res-time{font-size:10px;color:var(--oc);}
+.ck-res-badge{font-size:10px;padding:2px 8px;border-radius:10px;background:#f0fdf4;color:var(--gr);font-weight:600;flex-shrink:0;}
+.ck-res-toggle{font-size:12px;color:var(--mu);transition:transform .2s;}
+.ck-res-toggle.open{transform:rotate(180deg);}
+.ck-res-body{display:none;padding:10px 13px;}
+.ck-res-body.open{display:block;}
+.ck-res-row{display:flex;gap:6px;margin-bottom:5px;font-size:11px;}
+.ck-res-lbl{color:var(--mu);width:52px;flex-shrink:0;font-size:10px;font-weight:500;}
+.ck-res-val{flex:1;color:var(--tx);}
+.ck-res-prep{color:#065f46;background:#f0fdf4;padding:3px 8px;border-radius:6px;font-size:11px;line-height:1.5;}
+.ck-res-cash{font-weight:700;color:var(--co);}
+.ck-res-cash.card{color:var(--oc);}
+.ck-res-mapbtn{display:inline-flex;align-items:center;font-size:10px;color:var(--oc);text-decoration:none;padding:2px 7px;border:1px solid var(--oc);border-radius:6px;margin-top:3px;}
+.ck-res-memo{margin-top:8px;padding-top:8px;border-top:1px solid var(--bo);}
+.ck-res-memo-lbl{font-size:10px;color:var(--mu);margin-bottom:3px;}
 .res-add-btn{width:100%;padding:12px;background:none;border:2px dashed var(--bo);border-radius:12px;font-size:12px;color:var(--mu);cursor:pointer;font-family:'Noto Sans KR',sans-serif;transition:all .2s;}
 .res-add-btn:hover{border-color:var(--oc);color:var(--oc);}
 .res-form{background:#fff;border-radius:12px;padding:14px;box-shadow:0 2px 8px rgba(0,0,0,.08);margin-bottom:10px;}
@@ -202,21 +229,13 @@ html,body{font-family:'Noto Sans KR',sans-serif;background:var(--sand);color:var
 
   const app = initializeApp(firebaseConfig);
   const db = getFirestore(app);
-
-  // 미야코지마 여행 공유 데이터 저장 위치
   const tripRef = doc(db, "trip", "miyako2026");
 
-  // 기존 일반 script에서 쓸 수 있게 전역으로 열어둠
-  window.tripFirebase = {
-    db,
-    tripRef,
-    setDoc,
-    getDoc,
-    onSnapshot
-  };
-
+  window.tripFirebase = { db, tripRef, setDoc, getDoc, onSnapshot };
   console.log("Firebase + Firestore 연결 완료");
 </script>
+
+
 
 <div class="hero">
   <h1>🐢 미야코지마 4박5일</h1>
@@ -254,33 +273,75 @@ html,body{font-family:'Noto Sans KR',sans-serif;background:var(--sand);color:var
 
 <!-- ===== TAB 1: 체크리스트 ===== -->
 <div class="sec" id="s1">
+  <div id="ck-res-section"></div>
+
   <div class="sg">
     <div class="sb"><div class="sl">예약 완료</div><div class="sv">8</div><div class="ss">항목</div></div>
-    <div class="sb"><div class="sl">짐 준비</div><div class="sv" id="c2">0</div><div class="ss">/ 10</div></div>
+    <div class="sb"><div class="sl">짐 준비</div><div class="sv" id="c2">0</div><div class="ss">/ 25</div></div>
     <div class="sb"><div class="sl">쇼핑 완료</div><div class="sv" id="c3">0</div><div class="ss">/ 18</div></div>
     <div class="sb"><div class="sl">출발 D-Day</div><div class="sv" style="font-size:12px">4/26</div><div class="ss">일요일</div></div>
   </div>
 
+  <!-- 서류/증명 -->
+  <div class="ck-hd-section">📋 서류 · 증명</div>
   <div class="cklist">
-    <div class="ck-hd">🏠 집에서 출발 전 체크</div>
-    <div class="ck-row" onclick="tBag(this)"><div class="cb"></div><div><div class="ck-txt">🛂 여권 (유효기간 6개월 이상) · 가족 4명 모두</div></div></div>
-    <div class="ck-row" onclick="tBag(this)"><div class="cb"></div><div><div class="ck-txt">🚗 국제운전면허증 2개 (부부 모두!)</div><div class="ck-sub">⚠️ 트라이크 탑승 필수 · 렌터카도 필요</div></div></div>
-    <div class="ck-row" onclick="tBag(this)"><div class="cb"></div><div><div class="ck-txt">💴 엔화 환전 최소 ¥50,000 준비</div><div class="ck-sub">렌터카 현장결제 ¥28,800 포함</div></div></div>
-    <div class="ck-row" onclick="tBag(this)"><div class="cb"></div><div><div class="ck-txt">🤿 스노클링 장비 챙기기 (워터슈즈 필수!)</div><div class="ck-sub">마스크·오리발·래쉬가드</div></div></div>
-    <div class="ck-row" onclick="tBag(this)"><div class="cb"></div><div><div class="ck-txt">👙 수영복 · 래쉬가드 · 아들 수영복</div></div></div>
-    <div class="ck-row" onclick="tBag(this)"><div class="cb"></div><div><div class="ck-txt">🕶️ 선글라스 · 모자 · 자외선 차단 의류</div></div></div>
-    <div class="ck-row" onclick="tBag(this)"><div class="cb"></div><div><div class="ck-txt">💊 상비약 · 두통·소화제·멀미약·반창고</div></div></div>
-    <div class="ck-row" onclick="tBag(this)"><div class="cb"></div><div><div class="ck-txt">📷 카메라 · 방수 케이스</div></div></div>
-    <div class="ck-row" onclick="tBag(this)"><div class="cb"></div><div><div class="ck-txt">🔌 보조배터리 · 충전 케이블 · 멀티어댑터</div></div></div>
-    <div class="ck-row" onclick="tBag(this)"><div class="cb"></div><div><div class="ck-txt">📱 구글맵 오프라인 저장 (미야코지마 지역)</div><div class="ck-sub">앱→미야코지마 검색→오프라인 지도 다운로드</div></div></div>
+    <div class="ck-row" onclick="tBag(this)"><div class="cb"></div><div><div class="ck-txt">🛂 여권 · 가족 4명 모두</div><div class="ck-sub">유효기간 6개월 이상 확인</div></div></div>
+    <div class="ck-row" onclick="tBag(this)"><div class="cb"></div><div><div class="ck-txt">🚗 국제운전면허증 · 부부 2개</div><div class="ck-sub">⚠️ 렌터카 + 트라이크 모두 필요 · 국내면허도 함께</div></div></div>
+    <div class="ck-row" onclick="tBag(this)"><div class="cb"></div><div><div class="ck-txt">📄 예약확인서 출력 or 저장</div><div class="ck-sub">항공 · 렌터카 · 호텔 · 스노클링 · 트라이크 · KKday 바우처</div></div></div>
+    <div class="ck-row" onclick="tBag(this)"><div class="cb"></div><div><div class="ck-txt">📱 KKday 바우처 스크린샷 저장</div><div class="ck-sub">정글 나이트 투어 · 오프라인에서도 볼 수 있게</div></div></div>
+  </div>
+
+  <!-- 현금/결제 -->
+  <div class="ck-hd-section">💴 현금 · 결제</div>
+  <div class="cklist">
+    <div class="ck-row" onclick="tBag(this)"><div class="cb"></div><div><div class="ck-txt">💴 엔화 현금 최소 ¥80,000 이상</div><div class="ck-sub">렌터카 ¥28,800 + 트라이크 ¥40,000 + 온천·가챠·식비 등</div></div></div>
+    <div class="ck-row" onclick="tBag(this)"><div class="cb"></div><div><div class="ck-txt">💳 해외 결제 카드 사용 가능 여부 확인</div><div class="ck-sub">VISA / Mastercard 추천 · 해외 수수료 확인</div></div></div>
+    <div class="ck-row" onclick="tBag(this)"><div class="cb"></div><div><div class="ck-txt">📱 T-money / 교통카드 잔액 확인</div><div class="ck-sub">김해공항 대중교통 이용 시</div></div></div>
+  </div>
+
+  <!-- 의류/수영 -->
+  <div class="ck-hd-section">👙 의류 · 수영</div>
+  <div class="cklist">
+    <div class="ck-row done" onclick="tBag(this)"><div class="cb ok">✓</div><div><div class="ck-txt">👙 수영복 (어른 2 + 아들)</div><div class="ck-sub">✅ 완료</div></div></div>
+    <div class="ck-row" onclick="tBag(this)"><div class="cb"></div><div><div class="ck-txt">🩱 래쉬가드 · UV차단 (가족 전원)</div><div class="ck-sub">미야코지마 자외선 매우 강함 · 긴팔 추천</div></div></div>
+    <div class="ck-row" onclick="tBag(this)"><div class="cb"></div><div><div class="ck-txt">🕶️ 선글라스 · 챙 넓은 모자</div><div class="ck-sub">트라이크 이동 시 필수 · 바람막이 역할</div></div></div>
+    <div class="ck-row" onclick="tBag(this)"><div class="cb"></div><div><div class="ck-txt">👕 평상복 · 긴 소매 (저녁용)</div><div class="ck-sub">나이트 투어 시 모기 대비 긴팔·긴바지 필수</div></div></div>
+    <div class="ck-row" onclick="tBag(this)"><div class="cb"></div><div><div class="ck-txt">🩴 샌들 + 운동화</div><div class="ck-sub">나이트 투어·정글은 운동화 필수</div></div></div>
+    <div class="ck-row" onclick="tBag(this)"><div class="cb"></div><div><div class="ck-txt">👟 워터슈즈</div><div class="ck-sub">스노클링·나카노시마 스노클링 필수</div></div></div>
+  </div>
+
+  <!-- 물놀이/액티비티 장비 -->
+  <div class="ck-hd-section">🤿 물놀이 · 액티비티</div>
+  <div class="cklist">
+    <div class="ck-row" onclick="tBag(this)"><div class="cb"></div><div><div class="ck-txt">🤿 스노클링 마스크 + 오리발</div><div class="ck-sub">투어 장비 제공되나 개인 것이 더 편함</div></div></div>
+    <div class="ck-row" onclick="tBag(this)"><div class="cb"></div><div><div class="ck-txt">🧴 방수 선크림 (SPF50+ 필수)</div><div class="ck-sub">물에 안 지워지는 제품 · 가족 모두 충분한 양</div></div></div>
+    <div class="ck-row" onclick="tBag(this)"><div class="cb"></div><div><div class="ck-txt">📷 방수 카메라 or 방수 케이스</div><div class="ck-sub">스노클링 중 바다거북 촬영 대비</div></div></div>
+    <div class="ck-row" onclick="tBag(this)"><div class="cb"></div><div><div class="ck-txt">🎒 방수 백팩 or 드라이백</div><div class="ck-sub">수영 후 젖은 옷 분리 보관용</div></div></div>
+  </div>
+
+  <!-- 전자기기 -->
+  <div class="ck-hd-section">🔌 전자기기</div>
+  <div class="cklist">
+    <div class="ck-row" onclick="tBag(this)"><div class="cb"></div><div><div class="ck-txt">🔌 보조배터리 (10,000mAh 이상)</div><div class="ck-sub">하루 종일 트라이크·나이트 투어 등 장시간 외출</div></div></div>
+    <div class="ck-row" onclick="tBag(this)"><div class="cb"></div><div><div class="ck-txt">🔋 충전 케이블 · 멀티포트 충전기</div><div class="ck-sub">가족 기기 한번에 충전 가능한 것 추천</div></div></div>
+    <div class="ck-row" onclick="tBag(this)"><div class="cb"></div><div><div class="ck-txt">📱 구글맵 오프라인 저장</div><div class="ck-sub">미야코지마 지역 검색 후 오프라인 저장 · 로밍 없어도 내비 가능</div></div></div>
+    <div class="ck-row" onclick="tBag(this)"><div class="cb"></div><div><div class="ck-txt">📶 로밍 or 포켓와이파이 준비</div><div class="ck-sub">현지 통화·검색용 · SKT/KT 오키나와 로밍 가능</div></div></div>
+  </div>
+
+  <!-- 의약/위생 -->
+  <div class="ck-hd-section">💊 의약 · 위생</div>
+  <div class="cklist">
+    <div class="ck-row" onclick="tBag(this)"><div class="cb"></div><div><div class="ck-txt">💊 두통약 · 소화제 · 멀미약</div><div class="ck-sub">렌터카 장거리 이동 · 뱃멀미 대비</div></div></div>
+    <div class="ck-row" onclick="tBag(this)"><div class="cb"></div><div><div class="ck-txt">🩹 반창고 · 상처 연고</div><div class="ck-sub">산호·바위 긁힘 대비</div></div></div>
+    <div class="ck-row" onclick="tBag(this)"><div class="cb"></div><div><div class="ck-txt">🦟 모기 기피제</div><div class="ck-sub">나이트 투어·정글 활동 필수 · 스프레이형 추천</div></div></div>
+    <div class="ck-row" onclick="tBag(this)"><div class="cb"></div><div><div class="ck-txt">🧴 손소독제 · 물티슈</div><div class="ck-sub">식사 전·액티비티 후 수시로</div></div></div>
   </div>
   <div class="pbwrap"><div class="pb" id="bagpb" style="width:0%"></div></div>
 
   <div class="cklist">
     <div class="ck-hd">✈️ 공항 할일 체크</div>
-    <div class="ck-row" onclick="tAirport(this)"><div class="cb"></div><div><div class="ck-txt">📱 신라/롯데/신세계 면세 앱 사전예약 확인</div><div class="ck-sub">산토리 로얄·랑콤·담배 → 면세품 인도장 수령</div></div></div>
     <div class="ck-row" onclick="tAirport(this)"><div class="cb"></div><div><div class="ck-txt">💱 환전 (공항 환전소)</div><div class="ck-sub">¥50,000~80,000 권장 · 1만엔권 중심</div></div></div>
-    <div class="ck-row" onclick="tAirport(this)"><div class="cb"></div><div><div class="ck-txt">🛒 면세점 쇼핑</div><div class="ck-sub">산토리 로얄 4병 · 랑콤 · 담배 2보루</div></div></div>
+    <div class="ck-row" onclick="tAirport(this)"><div class="cb"></div><div><div class="ck-txt">🛒 면세점 쇼핑</div><div class="ck-sub">담배 2보루 (부부 각 1보루)</div></div></div>
     <div class="ck-row" onclick="tAirport(this)"><div class="cb"></div><div><div class="ck-txt">🛂 출국 심사 완료 (탑승 30분 전)</div></div></div>
     <div class="ck-row" onclick="tAirport(this)"><div class="cb"></div><div><div class="ck-txt">🌙 KKday 바우처 스크린샷 저장</div><div class="ck-sub">정글 나이트 투어 바우처 지참 필수</div></div></div>
   </div>
@@ -347,11 +408,52 @@ html,body{font-family:'Noto Sans KR',sans-serif;background:var(--sand);color:var
 
 <script>
 // ========= DATA =========
-const DAYS=[{id:'prep',label:'출발 전 준비',icon:'🏠',weather:'',weatherClass:'',tip:'집에서 챙겨야 할 것들 + 공항 면세 사전예약',items:[{id:'pr1',ico:'📱',name:'온라인 면세 사전예약',time:'출발 전까지',type:'prep',detail:'신라/롯데/신세계 면세점 앱에서 미리 예약하면 추가 할인·쿠폰 적용\n· 산토리 로얄 위스키 4병\n· 랑콤 UV 엑스페르 톤업 로즈 1개\n· 담배 2보루',imgs:['https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?w=300&h=190&fit=crop'],tips:'앱 구매→공항 수령. 여권번호 필요'},{id:'pr2',ico:'👙',name:'아들 수영복 구입',time:'출발 전',type:'prep',detail:'현지보다 한국에서 사이즈 맞춰 구입',imgs:['https://images.unsplash.com/photo-1516733968668-dbdce39c4651?w=300&h=190&fit=crop'],tips:'UV차단 래쉬가드 함께 추천'},{id:'pr3',ico:'💴',name:'엔화 환전 준비',time:'출발 전 또는 공항',type:'prep',detail:'최소 ¥50,000 이상 준비\n공항보다 시내 환전이 유리',imgs:['https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?w=300&h=190&fit=crop'],tips:'렌터카 현장결제 ¥28,800 현금 필수!'},{id:'pr4',ico:'📋',name:'최종 짐 체크',time:'전날 밤',type:'prep',detail:'여권·국제운전면허 2개·환전·스노클링 장비·수영복·선글라스·상비약·카메라·보조배터리\n구글맵 오프라인 저장!',tips:'KKday 바우처 스크린샷 저장 필수'}]},{id:'d0',label:'4/26 (일) 출발 · 입도',icon:'✈️',weather:'🌧️',weatherClass:'rainy',tip:'거제 10:00 출발 → 김해공항 → 시모지시마 17:00 도착 · 비 60%',items:[{id:'d0a',ico:'🏠',name:'거제 집 출발',time:'10:00',type:'transport',detail:'거제→김해공항 약 1시간 20분\n고속도로: 거제대로→남해고속도로→김해공항\n주차: 김해공항 주차장 (사전예약 추천)',imgs:['https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=300&h=190&fit=crop'],nav:[{label:'🚗 김해공항 내비',url:'https://www.google.com/maps/dir/?api=1&origin=34.8802,128.6228&destination=35.1795,128.9383&travelmode=driving'}]},{id:'d0b',ico:'🏦',name:'김해공항 도착 + 체크인',time:'11:30',type:'airport',detail:'진에어 LJ363 국제선 체크인\n탑승수속 마감: 14:15\n여권 지참 필수 · 수하물 위탁',imgs:['https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=300&h=190&fit=crop']},{id:'d0c',ico:'💱',name:'환전',time:'12:00',type:'airport',detail:'공항 환전소 · 국제선 출국장 내\n권장 금액: ¥50,000~80,000\n1만엔권 중심으로 환전',imgs:['https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=300&h=190&fit=crop'],tips:'소액권(1,000·5,000엔)도 일부 포함'},{id:'d0d',ico:'🛒',name:'면세점 쇼핑',time:'12:30~14:00',type:'shopping',detail:'· 산토리 로얄 700ml × 4병 (부부 각 2병)\n· 랑콤 UV 엑스페르 톤업 로즈 × 1개\n· 담배 최대 2보루 (부부 각 1보루)\n\n주류면세: 1인 2L·400달러 이내\n담배면세: 1인 200개비',imgs:['https://images.unsplash.com/photo-1567016376408-0226e4d0c1ea?w=300&h=190&fit=crop','https://images.unsplash.com/photo-1556228578-8c89e6adf883?w=300&h=190&fit=crop'],tips:'사전예약하면 추가 할인!'},{id:'d0e',ico:'🛂',name:'출국 심사 + 탑승',time:'14:00',type:'transport',detail:'출국심사 → 탑승구 이동\n탑승 시작: 14:15 · LJ363\n기내: 약 1시간 40분',imgs:['https://images.unsplash.com/photo-1540339832862-474599807836?w=300&h=190&fit=crop']},{id:'d0f',ico:'✈️',name:'LJ363 출발',time:'14:45',type:'confirmed',detail:'진에어 LJ363 김해 14:45 → 시모지시마 17:00',status:'confirmed',imgs:['https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=300&h=190&fit=crop']},{id:'d0g',ico:'🛬',name:'시모지시마 공항 도착',time:'17:00',type:'transport',detail:'수하물 찾기 → BUDGET 렌터카 카운터 이동\n⚠️ 시모지시마 = 이라부 섬 옆 섬 (본섬 아님!)\n☎ 0980-66-0018 미리 연락',nav:[{label:'🗺️ 공항 위치',url:'https://www.google.com/maps/place/?q=place_id:ChIJ371Pd_Kr9TQR_2lTZ8TrUkA'}]},{id:'d0h',ico:'🚗',name:'렌터카 픽업 ✅',time:'17:30',type:'confirmed',detail:'HNC958405 · BUDGET 시모지시마 공항점\n⚠️ 차량 사진 즉시 촬영! (앞뒤좌우 4방향)\n현장결제 ¥28,800 현금\n⏰ 반납: 4/30 14:30 (주유 후!)',status:'confirmed',imgs:['https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?w=300&h=190&fit=crop'],nav:[{label:'🚗 공항',url:'https://www.google.com/maps/place/?q=place_id:ChIJ371Pd_Kr9TQR_2lTZ8TrUkA'}],tips:'차량 사진 안 찍으면 기존 흠집도 배상 요구받을 수 있음!'},{id:'d0i',ico:'🛒',name:'MAXVALU 장보기',time:'18:00',type:'shopping',detail:'24시간 영업 · 저녁거리 + 간식 쇼핑\n· 도시락·사시미 · 오리온 맥주\n· 미야코 소바 컵라면 · 치타라 까망베르\n· 흑설탕 과자·베니이모 타르트\n🍦 블루실 컵아이스 4개 (Day1!)',imgs:['https://images.unsplash.com/photo-1542838132-92c53300491e?w=300&h=190&fit=crop','https://images.unsplash.com/photo-1563805042-7684c019e1cb?w=300&h=190&fit=crop'],nav:[{label:'🚗 자동차',url:'https://www.google.com/maps/dir/?api=1&destination=24.78776,125.2801808&travelmode=driving'}]},{id:'d0j',ico:'🏨',name:'호텔 체크인 ✅',time:'19:00',type:'confirmed',detail:'호텔 브리즈베이 마리나\n예약번호 7260324N239221 · 조식포함\n자전거 무료 · 셔틀버스 무료 · 룸키 결제 가능',status:'confirmed',imgs:['https://images.unsplash.com/photo-1566073771259-6a8506099945?w=300&h=190&fit=crop'],resort:true,nav:[{label:'🚗 자동차',url:'https://www.google.com/maps/dir/?api=1&destination=24.7199112,125.32530909999998&travelmode=driving'}]},{id:'d0k',ico:'🚲',name:'자전거 야간 라이딩',time:'19:30',type:'activity',detail:'리조트 내 자전거 무료 대여 · 야경 라이딩\n시기라 리조트 단지 한 바퀴',resort:true,imgs:['https://images.unsplash.com/photo-1558168094-f5c89f9b25b4?w=300&h=190&fit=crop']},{id:'d0l',ico:'🍱',name:'마트 도시락 저녁 + 🍦 Day1 아이스크림',time:'21:00',type:'food',detail:'MAXVALU 구입 도시락·사시미로 호텔방에서 편하게\n🍦 블루실 컵아이스 Day1!',resort:true,imgs:['https://images.unsplash.com/photo-1547592180-85f173990554?w=300&h=190&fit=crop'],menu:[{n:'도시락·사시미',note:'마트 구입'},{n:'🍦 블루실 컵아이스',note:'Day1!'}]}]},{id:'d1',label:'Day 2 · 4/27 (월) 스노클링',icon:'🤿',weather:'☀️',weatherClass:'sunny',tip:'스노클링 + 풀 + 야타이무라 · 맑음 0%',items:[{id:'d1a',ico:'🍳',name:'포르토피노 조식 뷔페',time:'06:30',type:'food',resort:true,detail:'호텔 내 포르토피노 · 70종↑ 뷔페 · 06:30~10:00\n조식포함 무료',imgs:['https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=300&h=190&fit=crop'],menu:[{n:'미야코 소바',note:'아침!'},{n:'양식 뷔페'},{n:'샴페인',note:'아침 샴페인 가능!'}]},{id:'d1b',ico:'🤿',name:'스노클링 투어 집합 ✅',time:'10:00 집합 / 10:30 출발',type:'confirmed',detail:'GAR519074 · 시기라 비치 제2주차장\n4인 · 약 2시간\n⚠️ 수영복 미리 착용 · 선크림 미리 바르기',status:'confirmed',imgs:['https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=300&h=190&fit=crop'],nav:[{label:'🚗 자동차',url:'https://www.google.com/maps/dir/?api=1&destination=24.7202654,125.34084670000001&travelmode=driving'},{label:'🚶 도보',url:'https://www.google.com/maps/dir/?api=1&destination=24.7202654,125.34084670000001&travelmode=walking'}],need:'스노클링 장비 · 워터슈즈 · 방수 카메라'},{id:'d1c',ico:'🍜',name:'시기라 비치 푸드코트 점심',time:'13:00',type:'food',detail:'수영복 그대로 OK! · 11:00~17:00',imgs:['https://images.unsplash.com/photo-1569718212165-3a8278d5f624?w=300&h=190&fit=crop','https://images.unsplash.com/photo-1501746877-14782df58970?w=300&h=190&fit=crop'],menu:[{n:'🍜 미야코 소바',note:'필수!'},{n:'🥭 망고 빙수',note:'현지 망고'},{n:'🥤 망고 주스'}],nav:[{label:'🚗 자동차',url:'https://www.google.com/maps/dir/?api=1&destination=24.7208659,125.34141059999997&travelmode=driving'},{label:'🚶 도보',url:'https://www.google.com/maps/dir/?api=1&destination=24.7208659,125.34141059999997&travelmode=walking'}]},{id:'d1d',ico:'🏊',name:'호텔 야외 풀 + 자쿠지',time:'14:30',type:'activity',resort:true,detail:'숙박객 무료 · 아이 풀 2종 + 대형 자쿠지',imgs:['https://images.unsplash.com/photo-1506197603052-3cc9c3a201bd?w=300&h=190&fit=crop']},{id:'d1e',ico:'🐢',name:'시기라 비치 바다거북 탐색',time:'17:30',type:'activity',resort:true,detail:'리조트 시기라 비치 · 숙박객 무료',imgs:['https://images.unsplash.com/photo-1504197832061-98356e3dcdcf?w=300&h=190&fit=crop']},{id:'d1f',ico:'🏮',name:'야타이무라 저녁 + 류큐 공연',time:'19:00',type:'food',resort:true,detail:'호텔 맞은편 · 예약불필요 · 룸키결제OK\n17:00~22:00 · 🎭 19:30~20:15 류큐의 바람 무료 공연!',imgs:['https://images.unsplash.com/photo-1529692236671-f1f6cf9683ba?w=300&h=190&fit=crop'],menu:[{n:'라후테',note:'¥850 삼겹살 조림'},{n:'고야찬푸루',note:'¥800'},{n:'BBQ',note:'와규+해산물'},{n:'오리온 생맥주'}]},{id:'d1g',ico:'🍦',name:'Blue Seal 페이나가마점 · Day2',time:'20:30',type:'food',detail:'10:00~20:00 · 포토존 있음',imgs:['https://images.unsplash.com/photo-1497034825429-c343d7c6a68f?w=300&h=190&fit=crop'],menu:[{n:'시쿠와사 샤베트',note:'오키나와 한정'},{n:'망고탱고'},{n:'블루웨이브'}],nav:[{label:'🚗 자동차',url:'https://www.google.com/maps/dir/?api=1&destination=24.7991282,125.26919179999999&travelmode=driving'}]}]},{id:'d2',label:'Day 3 · 4/28 (화) 트라이크',icon:'🏍️',weather:'☀️',weatherClass:'sunny',tip:'트라이크 이라부 풀코스 + 喜八 야키니쿠 · 맑음 0%',items:[{id:'d2a',ico:'🍳',name:'포르토피노 조식 뷔페',time:'06:30',type:'food',resort:true,detail:'호텔 내 · 조식포함 무료',imgs:['https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=300&h=190&fit=crop']},{id:'d2b',ico:'🏍️',name:'트라이크 2대 픽업 ✅',time:'⚠️ 08:30 집합 / 09:00 시작',type:'confirmed',detail:'예약 ID: 721 · 1일(10h) ¥40,000 · GoPro MAX 2기\n〒906-0505 이라베 쿠니나카 162\n☎ 090-4584-2020\n⚠️ 국제운전면허 2개 지참!\n⏰ 반납: 19:00 고정',status:'confirmed',imgs:['https://images.unsplash.com/photo-1558981285-6f0c7f80f702?w=300&h=190&fit=crop'],nav:[{label:'🗺️ 집합장소',url:'https://maps.app.goo.gl/wgCjCcGLPyY2igYTA'},{label:'🚗 자동차 내비',url:'https://www.google.com/maps/dir/?api=1&destination=24.8232307,125.17186559999999&travelmode=driving'}],tips:'렌터카는 트라이크 샵에 주차 · GoPro MAX 충전 확인'},{id:'d2c',ico:'🗻',name:'마키야마 전망대',time:'09:30',type:'activity',detail:'이라부 대교 파노라마 · 주차 후 5분 도보\n오전 빛 최고!',imgs:['https://images.unsplash.com/photo-1486325212027-8081e485255e?w=300&h=190&fit=crop'],nav:[{label:'🚗 자동차',url:'https://www.google.com/maps/dir/?api=1&destination=24.817841899999998,125.21825289999998&travelmode=driving'}]},{id:'d2d',ico:'🏖️',name:'와타구치노하마',time:'10:05',type:'activity',detail:'800m 백사장 · 샤워 부스 ¥100/4분',imgs:['https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=300&h=190&fit=crop'],nav:[{label:'🚗 자동차',url:'https://www.google.com/maps/dir/?api=1&destination=24.811737299999997,125.18066459999999&travelmode=driving'}]},{id:'d2e',ico:'🤿',name:'나카노시마 (카야파)',time:'11:05',type:'activity',detail:'이라부 최고 스노클링 · 산호·열대어·뱀장어\n⚠️ 워터슈즈 필수!',imgs:['https://images.unsplash.com/photo-1571752726703-5e7d1f6a986d?w=300&h=190&fit=crop'],nav:[{label:'🚗 자동차',url:'https://www.google.com/maps/dir/?api=1&destination=24.8135021,125.14535799999999&travelmode=driving'}]},{id:'d2f',ico:'🌊',name:'통리이케',time:'12:15',type:'activity',detail:'바다와 연결된 신비한 쌍둥이 연못\n17END 바로 옆 세트방문',imgs:['https://images.unsplash.com/photo-1439405326854-014607f694d7?w=300&h=190&fit=crop'],nav:[{label:'🚗 자동차',url:'https://www.google.com/maps/dir/?api=1&destination=24.8236648,125.13614960000001&travelmode=driving'}]},{id:'d2g',ico:'✈️',name:'17END + 🥭 망고 스무디 트럭',time:'12:55',type:'activity',detail:'활주로 끝 해변 · 비행기 이착륙 눈높이 체험!\n망고 스무디 ¥1,200',imgs:['https://images.unsplash.com/photo-1519996529931-28324d5a630e?w=300&h=190&fit=crop'],menu:[{n:'🥭 망고 스무디',note:'¥1,200'}],nav:[{label:'🚗 자동차',url:'https://www.google.com/maps/dir/?api=1&destination=24.8417373,125.13978410000001&travelmode=driving'}]},{id:'d2h',ico:'☕',name:'사와다노하마 + BOTTA 카페',time:'14:05',type:'food',detail:'쓰나미 바위 산책 + 젤라토·커피 ⭐4.1',imgs:['https://images.unsplash.com/photo-1488900128323-21503983a07e?w=300&h=190&fit=crop'],menu:[{n:'젤라토'},{n:'아이스 커피'},{n:'피자'}],nav:[{label:'🚗 자동차',url:'https://www.google.com/maps/dir/?api=1&destination=24.834712,125.15632299999999&travelmode=driving'}]},{id:'d2i',ico:'🍜',name:'라멘하우스 てぃだ 점심',time:'15:00',type:'food',detail:'28년 노포 · ¥700~1,000 · 平良下里\n좌식석 · 아이들 OK',imgs:['https://images.unsplash.com/photo-1623341214825-9f4f963727da?w=300&h=190&fit=crop'],menu:[{n:'てぃだ라멘',note:'돈코츠+닭뼈'},{n:'고소한맛',note:'こってり'},{n:'깔끔한맛',note:'あっさり'},{n:'목玉 토핑',note:'추가 추천'}],nav:[{label:'🚗 자동차',url:'https://www.google.com/maps/search/?api=1&query=ラーメンハウスてぃだ+宮古島'}]},{id:'d2j',ico:'🍦',name:'Blue Seal 본점 · Day3 🎉',time:'16:10',type:'food',detail:'4월 28일 → 1인 2개 무료!\n11:00~20:00 · 해먹에서 먹기',imgs:['https://images.unsplash.com/photo-1563805042-7684c019e1cb?w=300&h=190&fit=crop'],menu:[{n:'보라색 고구마'},{n:'시쿠와사'},{n:'망고탱고'},{n:'28일 2개 무료!',note:'🎉'}],nav:[{label:'🚗 자동차',url:'https://www.google.com/maps/dir/?api=1&destination=24.8011631,125.287426&travelmode=driving'}]},{id:'d2k',ico:'🏍️',name:'트라이크 반납 → 이동',time:'18:00 출발 → 19:00 반납',type:'transport',detail:'히라라→시모지시마 약 40분\n⏰ 19:00까지 반납 (1일 플랜 고정)\n반납 후 렌터카로 喜八 이동',nav:[{label:'🗺️ 반납 장소',url:'https://maps.app.goo.gl/wgCjCcGLPyY2igYTA'}]},{id:'d2l',ico:'🔥',name:'喜八 야키니쿠 저녁',time:'19:00~20:00 도착',type:'food',detail:'미야코 소 일두매입 노포 · 히라라 下里595\n☎ 0980-73-3859 · 17:30~22:00\n✅ 4/28 화요일 영업 (월·수 휴무)\n4인 합계 ¥20,000~25,000',imgs:['https://images.unsplash.com/photo-1544025162-d76538892ca2?w=300&h=190&fit=crop'],menu:[{n:'특선 5종 모둠',note:'¥5,960 (2인분)'},{n:'상등 소금 탄',note:'¥1,650'},{n:'미야코 소 자투리',note:'¥1,100'},{n:'나물·해ぶどう 샐러드'},{n:'냉면',note:'마무리'}],nav:[{label:'🚗 자동차',url:'https://www.google.com/maps/dir/?api=1&destination=24.8021895,125.2787&travelmode=driving'}],book:'tel:0980733859',bookLabel:'📞 0980-73-3859',tips:'예약 추천 · 월·수 휴무'}]},{id:'d3',label:'Day 4 · 4/29 (수) 히라라+온천+나이트',icon:'🎰',weather:'🌧️',weatherClass:'rainy',tip:'쇼핑 + 온천 + 류큐엔 + 나이트 투어 · 비 80%',items:[{id:'d3a',ico:'🍳',name:'포르토피노 조식 뷔페',time:'06:30',type:'food',resort:true,detail:'호텔 내 · 조식포함 무료',imgs:['https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=300&h=190&fit=crop']},{id:'d3b',ico:'🎰',name:'조이정글 가챠',time:'10:00',type:'activity',detail:'10:00~자정 · 크레인 게임·앙팡맨·코인 푸셔\n아이 용돈 ¥1,000~2,000',imgs:['https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=300&h=190&fit=crop'],nav:[{label:'🚗 자동차',url:'https://www.google.com/maps/dir/?api=1&destination=24.785733399999998,125.28157150000001&travelmode=driving'}]},{id:'d3c',ico:'🛒',name:'돈키호테 + Joy Jungle 가챠',time:'11:00',type:'shopping',detail:'08:00~새벽02:00 · ¥5,000↑ 면세 가능\n· 손톱깎이 2개 · 동전파스\n· 쿨링시트 아이용 · 모기패치\n· 미야코 망고잼 · 설염',imgs:['https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?w=300&h=190&fit=crop'],nav:[{label:'🚗 자동차',url:'https://www.google.com/maps/dir/?api=1&destination=24.7925269,125.3015506&travelmode=driving'}]},{id:'d3d',ico:'🐟',name:'Fish Lab 魚熟 점심',time:'12:30',type:'food',detail:'해산물 정식·사시미 ⭐4.9 · 07:30~15:00\n⚠️ 15:00 마감 서두르기!',imgs:['https://images.unsplash.com/photo-1579871494447-9811cf80d66c?w=300&h=190&fit=crop','https://images.unsplash.com/photo-1560717845-968823efbee1?w=300&h=190&fit=crop'],menu:[{n:'해산물 정식',note:'필수!'},{n:'사시미 모둠'},{n:'참치',note:'근해'},{n:'방어'}],nav:[{label:'🚗 자동차',url:'https://www.google.com/maps/dir/?api=1&destination=24.7959459,125.2743453&travelmode=driving'}]},{id:'d3e',ico:'🍨',name:'Ricco Gelato',time:'13:40',type:'food',detail:'12:00~17:45 · ⭐4.3',imgs:['https://images.unsplash.com/photo-1567206563114-c179706a56a6?w=300&h=190&fit=crop'],menu:[{n:'미야코 망고',note:'현지 농원'},{n:'피스타치오'},{n:'수제 비스킷 콘',note:'필수!'}],nav:[{label:'🚗 자동차',url:'https://www.google.com/maps/dir/?api=1&destination=24.802890299999998,125.27979049999999&travelmode=driving'},{label:'🚶 도보',url:'https://www.google.com/maps/dir/?api=1&destination=24.802890299999998,125.27979049999999&travelmode=walking'}]},{id:'d3f',ico:'♨️',name:'시기라 온천',time:'15:30',type:'activity',resort:true,detail:'11:00~22:00 · 비숙박객 ¥1,500\n야외 노천탕 · ⛈️ 비 오는 날 온천 최고!',imgs:['https://images.unsplash.com/photo-1531983412531-1f49a365ffed?w=300&h=190&fit=crop'],nav:[{label:'🗺️ 위치',url:'https://www.google.com/maps/dir/?api=1&destination=24.7199684,125.3348613&travelmode=driving'}]},{id:'d3g',ico:'🔥',name:'류큐엔 숯불구이 ✅',time:'20:15',type:'confirmed',resort:true,detail:'〒906-0203 上野宮国974-7 · ⭐4.4\n미야코 소 숯불구이 · 4/29 20:15 예약완료',status:'confirmed',imgs:['https://images.unsplash.com/photo-1544025162-d76538892ca2?w=300&h=190&fit=crop'],menu:[{n:'미야코 소 사로인'},{n:'미야코 소 칼비'},{n:'네기 소고기 말이',note:'인기!'},{n:'냉면',note:'마무리'}],nav:[{label:'🗺️ 위치',url:'https://maps.google.com/?cid=5306391224645787748'}]},{id:'d3h',ico:'🌙',name:'KKday 정글 나이트 투어 ✅',time:'21:00',type:'confirmed',detail:'COCO 미야코지마 · KKday 예약완료\n⚠️ 바우처 지참 필수!\n야자게·개구리·도마뱀 · 약 2시간\n⛈️ 비 와도 OK!',status:'confirmed',imgs:['https://images.unsplash.com/photo-1518020382113-a7e8fc38eac9?w=300&h=190&fit=crop'],nav:[{label:'🚗 자동차',url:'https://www.google.com/maps/dir/?api=1&destination=24.7583225,125.36443129999999&travelmode=driving'}],tips:'KKday 바우처 스크린샷 저장!'},{id:'d3i',ico:'🍦',name:'hirara de ice · Day4',time:'23:00',type:'food',detail:'⭐4.9 · 19:30~00:15 (목 휴무)\n〒906-0013 平良下里520 地下\n⚠️ 西里 아님! 네온간판+달 목표',imgs:['https://lh3.googleusercontent.com/places/ANXAkqF-ljhj-RGlt7s9WPptUNRDif1ztWvCdG4uuW1xjBynTgikaOv6x3J79niUsW4oKNHIhDEEgyRZgGDsShHvOZPOmnKfz9Wj-9o=s400-w400-h300','https://images.unsplash.com/photo-1497034825429-c343d7c6a68f?w=300&h=190&fit=crop'],menu:[{n:'샐러드 캐러멜',note:'시그니처'},{n:'초코바나나'},{n:'바삭한 플레이크',note:'바닥 필수!'}],nav:[{label:'🚗 자동차',url:'https://www.google.com/maps/dir/?api=1&destination=24.801514899999997,125.27725079999999&travelmode=driving'},{label:'🚶 도보',url:'https://www.google.com/maps/dir/?api=1&destination=24.801514899999997,125.27725079999999&travelmode=walking'}]}]},{id:'d4',label:'Day 5 · 4/30 (목) 귀국',icon:'🌊',weather:'🌦️',weatherClass:'cloudy',tip:'마지막 비치 + 망고 카페 + 귀국 · 흐림 60%',items:[{id:'d4a',ico:'🍳',name:'포르토피노 마지막 조식',time:'06:30',type:'food',resort:true,detail:'호텔 내 · 조식포함 무료 · 마지막!',imgs:['https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=300&h=190&fit=crop']},{id:'d4b',ico:'🌊',name:'요나하마에하마 비치 작별',time:'09:30',type:'activity',detail:'미야코 블루 마지막으로!\n맨발로 모래 밟기 · 📷 가족사진!',imgs:['https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=300&h=190&fit=crop'],nav:[{label:'🚗 자동차',url:'https://www.google.com/maps/dir/?api=1&destination=24.7349726,125.26297450000001&travelmode=driving'},{label:'🚲 자전거',url:'https://www.google.com/maps/dir/?api=1&destination=24.7349726,125.26297450000001&travelmode=cycling'}]},{id:'d4c',ico:'🥭',name:'블루터틀 망고 카페 점심',time:'11:00',type:'food',detail:'⭐4.7 · 11:00~17:30 · 공항 가는 길!',imgs:['https://images.unsplash.com/photo-1519996529931-28324d5a630e?w=300&h=190&fit=crop'],menu:[{n:'망고 주스',note:'미야코 100%'},{n:'아사이 볼+망고'},{n:'망고 타피오카 밀크',note:'아이들 픽'}],nav:[{label:'🚗 자동차',url:'https://www.google.com/maps/dir/?api=1&destination=24.7747453,125.29482379999999&travelmode=driving'}]},{id:'d4d',ico:'⛽',name:'주유 + 렌터카 반납',time:'14:00~14:30',type:'transport',detail:'HNC958405 · ⚠️ 주유 후 반납!\n시모지시마 공항 BUDGET\n반납 전 차량 내 소지품 확인',nav:[{label:'⛽ 주유소 찾기',url:'https://www.google.com/maps/search/?api=1&query=ガソリンスタンド+宮古島'},{label:'🗺️ 공항',url:'https://www.google.com/maps/place/?q=place_id:ChIJ371Pd_Kr9TQR_2lTZ8TrUkA'}]},{id:'d4e',ico:'🍦',name:'공항 소프트아이스크림 · Day5',time:'14:30',type:'food',detail:'시모지시마 공항 내 · 마지막 아이스크림!\n사탕수수 소프트 추천',imgs:['https://images.unsplash.com/photo-1563805042-7684c019e1cb?w=300&h=190&fit=crop']},{id:'d4f',ico:'✈️',name:'LJ364 귀국 출발',time:'18:00',type:'confirmed',detail:'탑승 마감: 17:30 · 시모지시마 18:00 → 김해 20:20',status:'confirmed',imgs:['https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=300&h=190&fit=crop']},{id:'d4g',ico:'🏠',name:'거제 귀가',time:'22:00~23:00 예상',type:'transport',detail:'김해공항→거제 약 1시간 20분\n면세품 수령 확인 (주류·담배)',nav:[{label:'🚗 귀가 내비',url:'https://www.google.com/maps/dir/?api=1&origin=35.1795,128.9383&destination=34.8802,128.6228&travelmode=driving'}]}]}];
+const DAYS=[{id:'prep',label:'출발 전 준비',icon:'🏠',weather:'',weatherClass:'',tip:'집에서 챙겨야 할 것들 + 공항 면세 사전예약',items:[{id:'pr2',ico:'👙',name:'아들 수영복 구입',time:'출발 전',type:'prep',detail:'현지보다 한국에서 사이즈 맞춰 구입',tips:'UV차단 래쉬가드 함께 추천'},{id:'pr3',ico:'💴',name:'엔화 환전 준비',time:'출발 전 또는 공항',type:'prep',detail:'최소 ¥50,000 이상 준비\n공항보다 시내 환전이 유리',tips:'렌터카 현장결제 ¥28,800 현금 필수!'},{id:'pr4',ico:'📋',name:'최종 짐 체크',time:'전날 밤',type:'prep',detail:'여권·국제운전면허 2개·환전·스노클링 장비·수영복·선글라스·상비약·카메라·보조배터리\n구글맵 오프라인 저장!',tips:'KKday 바우처 스크린샷 저장 필수'}]},{id:'d0',label:'4/26 (일) 출발 · 입도',icon:'✈️',weather:'🌧️',weatherClass:'rainy',tip:'거제 10:00 출발 → 김해공항 → 시모지시마 17:00 도착 · 비 60%',items:[{id:'d0a',ico:'🏠',name:'거제 집 출발',time:'10:00',type:'transport',detail:'거제→김해공항 약 1시간 20분\n고속도로: 거제대로→남해고속도로→김해공항\n주차: 김해공항 주차장 (사전예약 추천)',nav:[{label:'🚗 김해공항 내비',url:'https://www.google.com/maps/dir/?api=1&origin=34.8802,128.6228&destination=35.1795,128.9383&travelmode=driving'}]},{id:'d0b',ico:'🏦',name:'김해공항 도착 + 체크인',time:'11:30',type:'airport',detail:'진에어 LJ363 국제선 체크인\n탑승수속 마감: 14:15\n여권 지참 필수 · 수하물 위탁'},{id:'d0c',ico:'💱',name:'환전',time:'12:00',type:'airport',detail:'공항 환전소 · 국제선 출국장 내\n권장 금액: ¥50,000~80,000\n1만엔권 중심으로 환전',tips:'소액권(1,000·5,000엔)도 일부 포함'},{id:'d0d',ico:'🛒',name:'면세점 쇼핑',time:'12:30~14:00',type:'shopping',detail:'· 담배 최대 2보루 (부부 각 1보루)\n\n담배면세: 1인 200개비',tips:'매장 직접 방문 구매'},{id:'d0e',ico:'🛂',name:'출국 심사 + 탑승',time:'14:00',type:'transport',detail:'출국심사 → 탑승구 이동\n탑승 시작: 14:15 · LJ363\n기내: 약 1시간 40분'},{id:'d0f',ico:'✈️',name:'LJ363 출발',time:'14:45',type:'confirmed',detail:'진에어 LJ363 김해 14:45 → 시모지시마 17:00',status:'confirmed'},{id:'d0g',ico:'🛬',name:'시모지시마 공항 도착',time:'17:00',type:'transport',detail:'수하물 찾기 → BUDGET 렌터카 카운터 이동\n⚠️ 시모지시마 = 이라부 섬 옆 섬 (본섬 아님!)\n☎ 0980-66-0018 미리 연락',nav:[{label:'🗺️ 공항 위치',url:'https://www.google.com/maps/place/?q=place_id:ChIJ371Pd_Kr9TQR_2lTZ8TrUkA'}]},{id:'d0h',ico:'🚗',name:'렌터카 픽업 ✅',time:'17:30',type:'confirmed',detail:'HNC958405 · BUDGET 시모지시마 공항점\n⚠️ 차량 사진 즉시 촬영! (앞뒤좌우 4방향)\n현장결제 ¥28,800 현금\n⏰ 반납: 4/30 14:30 (주유 후!)',status:'confirmed',nav:[{label:'🚗 공항',url:'https://www.google.com/maps/place/?q=place_id:ChIJ371Pd_Kr9TQR_2lTZ8TrUkA'}],tips:'차량 사진 안 찍으면 기존 흠집도 배상 요구받을 수 있음!'},{id:'d0i',ico:'🛒',name:'MAXVALU 장보기',time:'18:00',type:'shopping',detail:'24시간 영업 · 저녁거리 + 간식 쇼핑\n· 🥃 산토리 로얄 위스키 4병 (부부 각 2병!)\n· 도시락·사시미 · 오리온 맥주\n· 미야코 소바 컵라면 · 치타라 까망베르\n· 흑설탕 과자·베니이모 타르트\n🍦 블루실 컵아이스 4개 (Day1!)',nav:[{label:'🚗 자동차',url:'https://www.google.com/maps/dir/?api=1&destination=24.78776,125.2801808&travelmode=driving'}]},{id:'d0j',ico:'🏨',name:'호텔 체크인 ✅',time:'19:00',type:'confirmed',detail:'호텔 브리즈베이 마리나\n예약번호 7260324N239221 · 조식포함\n자전거 무료 · 셔틀버스 무료 · 룸키 결제 가능',status:'confirmed',resort:true,nav:[{label:'🚗 자동차',url:'https://www.google.com/maps/dir/?api=1&destination=24.7199112,125.32530909999998&travelmode=driving'}]},{id:'d0k',ico:'🚲',name:'자전거 야간 라이딩',time:'19:30',type:'activity',detail:'리조트 내 자전거 무료 대여 · 야경 라이딩\n시기라 리조트 단지 한 바퀴',resort:true},{id:'d0l',ico:'🍱',name:'마트 도시락 저녁 + 🍦 Day1 아이스크림',time:'21:00',type:'food',detail:'MAXVALU 구입 도시락·사시미로 호텔방에서 편하게\n🍦 블루실 컵아이스 Day1!',resort:true,menu:[{n:'도시락·사시미',note:'마트 구입'},{n:'🍦 블루실 컵아이스',note:'Day1!'}]}]},{id:'d1',label:'Day 2 · 4/27 (월) 스노클링',icon:'🤿',weather:'☀️',weatherClass:'sunny',tip:'스노클링 + 풀 + 야타이무라 · 맑음 0%',items:[{id:'d1a',ico:'🍳',name:'포르토피노 조식 뷔페',time:'06:30',type:'food',resort:true,detail:'호텔 내 포르토피노 · 70종↑ 뷔페 · 06:30~10:00\n조식포함 무료',menu:[{n:'미야코 소바',note:'아침!'},{n:'양식 뷔페'},{n:'샴페인',note:'아침 샴페인 가능!'}]},{id:'d1b',ico:'🤿',name:'스노클링 투어 집합 ✅',time:'10:00 집합 / 10:30 출발',type:'confirmed',detail:'GAR519074 · 시기라 비치 제2주차장\n4인 · 약 2시간\n⚠️ 수영복 미리 착용 · 선크림 미리 바르기',status:'confirmed',nav:[{label:'🚗 자동차',url:'https://www.google.com/maps/dir/?api=1&destination=24.7202654,125.34084670000001&travelmode=driving'},{label:'🚶 도보',url:'https://www.google.com/maps/dir/?api=1&destination=24.7202654,125.34084670000001&travelmode=walking'}],need:'스노클링 장비 · 워터슈즈 · 방수 카메라'},{id:'d1c',ico:'🍜',name:'시기라 비치 푸드코트 점심',time:'13:00',type:'food',detail:'수영복 그대로 OK! · 11:00~17:00',menu:[{n:'🍜 미야코 소바',note:'필수!'},{n:'🥭 망고 빙수',note:'현지 망고'},{n:'🥤 망고 주스'}],nav:[{label:'🚗 자동차',url:'https://www.google.com/maps/dir/?api=1&destination=24.7208659,125.34141059999997&travelmode=driving'},{label:'🚶 도보',url:'https://www.google.com/maps/dir/?api=1&destination=24.7208659,125.34141059999997&travelmode=walking'}]},{id:'d1d',ico:'🏊',name:'호텔 야외 풀 + 자쿠지',time:'14:30',type:'activity',resort:true,detail:'숙박객 무료 · 아이 풀 2종 + 대형 자쿠지'},{id:'d1e',ico:'🐢',name:'시기라 비치 바다거북 탐색',time:'17:30',type:'activity',resort:true,detail:'리조트 시기라 비치 · 숙박객 무료'},{id:'d1f',ico:'🏮',name:'야타이무라 저녁 + 류큐 공연',time:'19:00',type:'food',resort:true,detail:'호텔 맞은편 · 예약불필요 · 룸키결제OK\n17:00~22:00 · 🎭 19:30~20:15 류큐의 바람 무료 공연!',menu:[{n:'라후테',note:'¥850 삼겹살 조림'},{n:'고야찬푸루',note:'¥800'},{n:'BBQ',note:'와규+해산물'},{n:'오리온 생맥주'}]},{id:'d1g',ico:'🍦',name:'Blue Seal 페이나가마점 · Day2',time:'20:30',type:'food',detail:'10:00~20:00 · 포토존 있음',menu:[{n:'시쿠와사 샤베트',note:'오키나와 한정'},{n:'망고탱고'},{n:'블루웨이브'}],nav:[{label:'🚗 자동차',url:'https://www.google.com/maps/dir/?api=1&destination=24.7991282,125.26919179999999&travelmode=driving'}]}]},{id:'d2',label:'Day 3 · 4/28 (화) 트라이크',icon:'🏍️',weather:'☀️',weatherClass:'sunny',tip:'트라이크 이라부 풀코스 + 喜八 야키니쿠 · 맑음 0%',items:[{id:'d2a',ico:'🍳',name:'포르토피노 조식 뷔페',time:'06:30',type:'food',resort:true,detail:'호텔 내 · 조식포함 무료'},{id:'d2b',ico:'🏍️',name:'트라이크 2대 픽업 ✅',time:'⚠️ 08:30 집합 / 09:00 시작',type:'confirmed',detail:'예약 ID: 721 · 1일(10h) ¥40,000 · GoPro MAX 2기\n〒906-0505 이라베 쿠니나카 162\n☎ 090-4584-2020\n⚠️ 국제운전면허 2개 지참!\n⏰ 반납: 19:00 고정',status:'confirmed',nav:[{label:'🗺️ 집합장소',url:'https://maps.app.goo.gl/wgCjCcGLPyY2igYTA'},{label:'🚗 자동차 내비',url:'https://www.google.com/maps/dir/?api=1&destination=24.8232307,125.17186559999999&travelmode=driving'}],tips:'렌터카는 트라이크 샵에 주차 · GoPro MAX 충전 확인'},{id:'d2c',ico:'🗻',name:'마키야마 전망대',time:'09:30',type:'activity',detail:'이라부 대교 파노라마 · 주차 후 5분 도보\n오전 빛 최고!',nav:[{label:'🚗 자동차',url:'https://www.google.com/maps/dir/?api=1&destination=24.817841899999998,125.21825289999998&travelmode=driving'}]},{id:'d2d',ico:'🏖️',name:'와타구치노하마',time:'10:05',type:'activity',detail:'800m 백사장 · 샤워 부스 ¥100/4분',nav:[{label:'🚗 자동차',url:'https://www.google.com/maps/dir/?api=1&destination=24.811737299999997,125.18066459999999&travelmode=driving'}]},{id:'d2e',ico:'🤿',name:'나카노시마 (카야파)',time:'11:05',type:'activity',detail:'이라부 최고 스노클링 · 산호·열대어·뱀장어\n⚠️ 워터슈즈 필수!',nav:[{label:'🚗 자동차',url:'https://www.google.com/maps/dir/?api=1&destination=24.8135021,125.14535799999999&travelmode=driving'}]},{id:'d2f',ico:'🌊',name:'통리이케',time:'12:15',type:'activity',detail:'바다와 연결된 신비한 쌍둥이 연못\n17END 바로 옆 세트방문',nav:[{label:'🚗 자동차',url:'https://www.google.com/maps/dir/?api=1&destination=24.8236648,125.13614960000001&travelmode=driving'}]},{id:'d2g',ico:'✈️',name:'17END + 🥭 망고 스무디 트럭',time:'12:55',type:'activity',detail:'활주로 끝 해변 · 비행기 이착륙 눈높이 체험!\n망고 스무디 ¥1,200',menu:[{n:'🥭 망고 스무디',note:'¥1,200'}],nav:[{label:'🚗 자동차',url:'https://www.google.com/maps/dir/?api=1&destination=24.8417373,125.13978410000001&travelmode=driving'}]},{id:'d2h',ico:'☕',name:'사와다노하마 + BOTTA 카페',time:'14:05',type:'food',detail:'쓰나미 바위 산책 + 젤라토·커피 ⭐4.1',menu:[{n:'젤라토'},{n:'아이스 커피'},{n:'피자'}],nav:[{label:'🚗 자동차',url:'https://www.google.com/maps/dir/?api=1&destination=24.834712,125.15632299999999&travelmode=driving'}]},{id:'d2i',ico:'🍜',name:'라멘하우스 てぃだ 점심',time:'15:00',type:'food',detail:'28년 노포 · ¥700~1,000 · 平良下里\n좌식석 · 아이들 OK',menu:[{n:'てぃだ라멘',note:'돈코츠+닭뼈'},{n:'고소한맛',note:'こってり'},{n:'깔끔한맛',note:'あっさり'},{n:'목玉 토핑',note:'추가 추천'}],nav:[{label:'🚗 자동차',url:'https://www.google.com/maps/search/?api=1&query=ラーメンハウスてぃだ+宮古島'}]},{id:'d2j',ico:'🍦',name:'Blue Seal 본점 · Day3 🎉',time:'16:10',type:'food',detail:'4월 28일 → 1인 2개 무료!\n11:00~20:00 · 해먹에서 먹기',menu:[{n:'보라색 고구마'},{n:'시쿠와사'},{n:'망고탱고'},{n:'28일 2개 무료!',note:'🎉'}],nav:[{label:'🚗 자동차',url:'https://www.google.com/maps/dir/?api=1&destination=24.8011631,125.287426&travelmode=driving'}]},{id:'d2k',ico:'🏍️',name:'트라이크 반납 → 이동',time:'18:00 출발 → 19:00 반납',type:'transport',detail:'히라라→시모지시마 약 40분\n⏰ 19:00까지 반납 (1일 플랜 고정)\n반납 후 렌터카로 喜八 이동',nav:[{label:'🗺️ 반납 장소',url:'https://maps.app.goo.gl/wgCjCcGLPyY2igYTA'}]},{id:'d2l',ico:'🔥',name:'喜八 야키니쿠 저녁',time:'19:00~20:00 도착',type:'food',detail:'미야코 소 일두매입 노포 · 히라라 下里595\n☎ 0980-73-3859 · 17:30~22:00\n✅ 4/28 화요일 영업 (월·수 휴무)\n4인 합계 ¥20,000~25,000',menu:[{n:'특선 5종 모둠',note:'¥5,960 (2인분)'},{n:'상등 소금 탄',note:'¥1,650'},{n:'미야코 소 자투리',note:'¥1,100'},{n:'나물·해ぶどう 샐러드'},{n:'냉면',note:'마무리'}],nav:[{label:'🚗 자동차',url:'https://www.google.com/maps/dir/?api=1&destination=24.8021895,125.2787&travelmode=driving'}],book:'tel:0980733859',bookLabel:'📞 0980-73-3859',tips:'예약 추천 · 월·수 휴무'}]},{id:'d3',label:'Day 4 · 4/29 (수) 히라라+온천+나이트',icon:'🎰',weather:'🌧️',weatherClass:'rainy',tip:'쇼핑 + 온천 + 류큐엔 + 나이트 투어 · 비 80%',items:[{id:'d3a',ico:'🍳',name:'포르토피노 조식 뷔페',time:'06:30',type:'food',resort:true,detail:'호텔 내 · 조식포함 무료'},{id:'d3b',ico:'🎰',name:'조이정글 가챠',time:'10:00',type:'activity',detail:'10:00~자정 · 크레인 게임·앙팡맨·코인 푸셔\n아이 용돈 ¥1,000~2,000',nav:[{label:'🚗 자동차',url:'https://www.google.com/maps/dir/?api=1&destination=24.785733399999998,125.28157150000001&travelmode=driving'}]},{id:'d3c',ico:'🛒',name:'돈키호테 + Joy Jungle 가챠',time:'11:00',type:'shopping',detail:'08:00~새벽02:00 · ¥5,000↑ 면세 가능\n· 손톱깎이 2개 · 동전파스\n· 쿨링시트 아이용 · 모기패치\n· 미야코 망고잼 · 설염',nav:[{label:'🚗 자동차',url:'https://www.google.com/maps/dir/?api=1&destination=24.7925269,125.3015506&travelmode=driving'}]},{id:'d3d',ico:'🐟',name:'Fish Lab 魚熟 점심',time:'12:30',type:'food',detail:'해산물 정식·사시미 ⭐4.9 · 07:30~15:00\n⚠️ 15:00 마감 서두르기!',menu:[{n:'해산물 정식',note:'필수!'},{n:'사시미 모둠'},{n:'참치',note:'근해'},{n:'방어'}],nav:[{label:'🚗 자동차',url:'https://www.google.com/maps/dir/?api=1&destination=24.7959459,125.2743453&travelmode=driving'}]},{id:'d3e',ico:'🍨',name:'Ricco Gelato',time:'13:40',type:'food',detail:'12:00~17:45 · ⭐4.3',menu:[{n:'미야코 망고',note:'현지 농원'},{n:'피스타치오'},{n:'수제 비스킷 콘',note:'필수!'}],nav:[{label:'🚗 자동차',url:'https://www.google.com/maps/dir/?api=1&destination=24.802890299999998,125.27979049999999&travelmode=driving'},{label:'🚶 도보',url:'https://www.google.com/maps/dir/?api=1&destination=24.802890299999998,125.27979049999999&travelmode=walking'}]},{id:'d3f',ico:'♨️',name:'시기라 온천',time:'15:30',type:'activity',resort:true,detail:'11:00~22:00 · 비숙박객 ¥1,500\n야외 노천탕 · ⛈️ 비 오는 날 온천 최고!',nav:[{label:'🗺️ 위치',url:'https://www.google.com/maps/dir/?api=1&destination=24.7199684,125.3348613&travelmode=driving'}]},{id:'d3g',ico:'🔥',name:'류큐엔 숯불구이 ✅',time:'20:15',type:'confirmed',resort:true,detail:'〒906-0203 上野宮国974-7 · ⭐4.4\n미야코 소 숯불구이 · 4/29 20:15 예약완료',status:'confirmed',menu:[{n:'미야코 소 사로인'},{n:'미야코 소 칼비'},{n:'네기 소고기 말이',note:'인기!'},{n:'냉면',note:'마무리'}],nav:[{label:'🗺️ 위치',url:'https://maps.google.com/?cid=5306391224645787748'}]},{id:'d3h',ico:'🌙',name:'KKday 정글 나이트 투어 ✅',time:'21:00',type:'confirmed',detail:'COCO 미야코지마 · KKday 예약완료\n⚠️ 바우처 지참 필수!\n야자게·개구리·도마뱀 · 약 2시간\n⛈️ 비 와도 OK!',status:'confirmed',nav:[{label:'🚗 자동차',url:'https://www.google.com/maps/dir/?api=1&destination=24.7583225,125.36443129999999&travelmode=driving'}],tips:'KKday 바우처 스크린샷 저장!'},{id:'d3i',ico:'🍦',name:'hirara de ice · Day4',time:'23:00',type:'food',detail:'⭐4.9 · 19:30~00:15 (목 휴무)\n〒906-0013 平良下里520 地下\n⚠️ 西里 아님! 네온간판+달 목표',menu:[{n:'샐러드 캐러멜',note:'시그니처'},{n:'초코바나나'},{n:'바삭한 플레이크',note:'바닥 필수!'}],nav:[{label:'🚗 자동차',url:'https://www.google.com/maps/dir/?api=1&destination=24.801514899999997,125.27725079999999&travelmode=driving'},{label:'🚶 도보',url:'https://www.google.com/maps/dir/?api=1&destination=24.801514899999997,125.27725079999999&travelmode=walking'}]}]},{id:'d4',label:'Day 5 · 4/30 (목) 귀국',icon:'🌊',weather:'🌦️',weatherClass:'cloudy',tip:'마지막 비치 + 망고 카페 + 귀국 · 흐림 60%',items:[{id:'d4a',ico:'🍳',name:'포르토피노 마지막 조식',time:'06:30',type:'food',resort:true,detail:'호텔 내 · 조식포함 무료 · 마지막!'},{id:'d4b',ico:'🌊',name:'요나하마에하마 비치 작별',time:'09:30',type:'activity',detail:'미야코 블루 마지막으로!\n맨발로 모래 밟기 · 📷 가족사진!',nav:[{label:'🚗 자동차',url:'https://www.google.com/maps/dir/?api=1&destination=24.7349726,125.26297450000001&travelmode=driving'},{label:'🚲 자전거',url:'https://www.google.com/maps/dir/?api=1&destination=24.7349726,125.26297450000001&travelmode=cycling'}]},{id:'d4c',ico:'🥭',name:'블루터틀 망고 카페 점심',time:'11:00',type:'food',detail:'⭐4.7 · 11:00~17:30 · 공항 가는 길!',menu:[{n:'망고 주스',note:'미야코 100%'},{n:'아사이 볼+망고'},{n:'망고 타피오카 밀크',note:'아이들 픽'}],nav:[{label:'🚗 자동차',url:'https://www.google.com/maps/dir/?api=1&destination=24.7747453,125.29482379999999&travelmode=driving'}]},{id:'d4d',ico:'⛽',name:'주유 + 렌터카 반납',time:'14:00~14:30',type:'transport',detail:'HNC958405 · ⚠️ 주유 후 반납!\n시모지시마 공항 BUDGET\n반납 전 차량 내 소지품 확인',nav:[{label:'⛽ 주유소 찾기',url:'https://www.google.com/maps/search/?api=1&query=ガソリンスタンド+宮古島'},{label:'🗺️ 공항',url:'https://www.google.com/maps/place/?q=place_id:ChIJ371Pd_Kr9TQR_2lTZ8TrUkA'}]},{id:'d4e',ico:'🍦',name:'공항 소프트아이스크림 · Day5',time:'14:30',type:'food',detail:'시모지시마 공항 내 · 마지막 아이스크림!\n사탕수수 소프트 추천'},{id:'d4f',ico:'✈️',name:'LJ364 귀국 출발',time:'18:00',type:'confirmed',detail:'탑승 마감: 17:30 · 시모지시마 18:00 → 김해 20:20',status:'confirmed'},{id:'d4g',ico:'🏠',name:'거제 귀가',time:'22:00~23:00 예상',type:'transport',detail:'김해공항→거제 약 1시간 20분\n면세품 수령 확인 (주류·담배)',nav:[{label:'🚗 귀가 내비',url:'https://www.google.com/maps/dir/?api=1&origin=35.1795,128.9383&destination=34.8802,128.6228&travelmode=driving'}]}]}];
 
-const RESERVATIONS_DEFAULT=[{id:'r1',icon:'✈️',name:'진에어 LJ363 (가는 편)',date:'2026.4.26 (일)',time:'김해 14:45 → 시모지시마 17:00',resId:'LJ363',detail:'진에어 · 수하물 위탁 확인',status:'confirmed',color:'blue'},{id:'r2',icon:'✈️',name:'진에어 LJ364 (오는 편)',date:'2026.4.30 (목)',time:'시모지시마 18:00 → 김해 20:20',resId:'LJ364',detail:'탑승 마감 17:30',status:'confirmed',color:'blue'},{id:'r3',icon:'🚗',name:'BUDGET 렌터카',date:'2026.4.26~4.30',time:'픽업 17:30 / 반납 14:30 (시모지시마 공항)',resId:'HNC958405',detail:'현장결제 ¥28,800 현금 · ⚠️ 주유 후 반납 · ☎ 0980-66-0018',status:'confirmed',color:'green'},{id:'r4',icon:'🏨',name:'호텔 브리즈베이 마리나',date:'2026.4.26~4.30 (4박)',time:'체크인 15:00 / 체크아웃 11:00',resId:'7260324N239221',detail:'조식포함 · 성인2+아이2 · 자전거 무료 · 룸키 결제',status:'confirmed',color:'purple'},{id:'r5',icon:'🤿',name:'스노클링 투어',date:'2026.4.27 (월)',time:'10:00 집합 / 10:30 출발',resId:'GAR519074',detail:'시기라 비치 제2주차장 · 4인 · 바다거북 조우 높음!',status:'confirmed',color:'teal'},{id:'r6',icon:'🏍️',name:'트라이커 트라이크 2대',date:'2026.4.28 (화)',time:'⚠️ 08:30 집합 / 09:00 시작 / 19:00 반납',resId:'ID: 721',detail:'1일(10h) ¥40,000 · GoPro MAX 2기 · 이라베 쿠니나카 162\n☎ 090-4584-2020 · 국제운전면허 2개 지참!',status:'confirmed',color:'orange'},{id:'r7',icon:'🔥',name:'류큐엔 숯불구이',date:'2026.4.29 (수)',time:'20:15 · 4인',resId:'예약완료',detail:'〒906-0203 上野宮国974-7 · ⭐4.4',status:'confirmed',color:'red'},{id:'r8',icon:'🌙',name:'KKday 정글 나이트 투어',date:'2026.4.29 (수)',time:'21:00 · 약 2시간',resId:'KKday 바우처',detail:'COCO 미야코지마 · 야자게·개구리·도마뱀 · 우천 OK\n⚠️ KKday 바우처 지참 필수!',status:'confirmed',color:'darkblue'}];
+const RESERVATIONS_DEFAULT=[
+{id:'r1',icon:'✈️',name:'진에어 LJ363 (가는 편)',date:'2026.4.26 (일)',time:'김해 14:45 → 시모지시마 17:00',resId:'LJ363',
+location:'김해국제공항 진에어 국제선 체크인 카운터',mapUrl:'https://www.google.com/maps/search/?api=1&query=김해국제공항',
+site:'jinair.com',siteUrl:'https://www.jinair.com',
+prep:'여권 (유효기간 6개월↑) · 탑승권 (앱 또는 출력)',cash:'💳 카드결제 (현금 불필요)',
+detail:'수하물 위탁 · 탑승수속 마감 14:15 · 탑승 14:30',status:'confirmed',color:'blue'},
+{id:'r2',icon:'✈️',name:'진에어 LJ364 (오는 편)',date:'2026.4.30 (목)',time:'시모지시마 18:00 → 김해 20:20',resId:'LJ364',
+location:'시모지시마 공항 진에어 카운터',mapUrl:'https://www.google.com/maps/place/?q=place_id:ChIJ371Pd_Kr9TQR_2lTZ8TrUkA',
+site:'jinair.com',siteUrl:'https://www.jinair.com',
+prep:'여권 · 탑승권 · 면세품 수령 완료 확인',cash:'💳 카드결제 (현금 불필요)',
+detail:'탑승 마감 17:30 · 수하물 위탁 · 귀국편',status:'confirmed',color:'blue'},
+{id:'r3',icon:'🚗',name:'BUDGET 렌터카',date:'2026.4.26~4.30 (5일)',time:'픽업 17:30 / 반납 14:30',resId:'HNC958405',
+location:'시모지시마 공항 도착 로비 BUDGET 카운터',mapUrl:'https://www.google.com/maps/place/?q=place_id:ChIJ371Pd_Kr9TQR_2lTZ8TrUkA',
+site:'budgetjapan.jp',siteUrl:'https://www.budgetjapan.jp',
+prep:'여권 · 국제운전면허증 2개 (부부 모두!) · 현금',cash:'💴 현금 ¥28,800 필수 (현장결제)',
+detail:'⚠️ 픽업 즉시 차량 사진 4방향 촬영!\n반납 시 주유 후 반납 · ☎ 0980-66-0018',status:'confirmed',color:'green'},
+{id:'r4',icon:'🏨',name:'호텔 브리즈베이 마리나',date:'2026.4.26~4.30 (4박)',time:'체크인 19:00 / 체크아웃 11:00',resId:'7260324N239221',
+location:'〒906-0401 沖縄県宮古島市上野宮国 · 호텔 프론트',mapUrl:'https://www.google.com/maps/dir/?api=1&destination=24.7199112,125.32530909999998&travelmode=driving',
+site:'brezza-bay.com',siteUrl:'https://www.brezza-bay.com',
+prep:'예약확인서 (번호 7260324N239221) · 여권',cash:'💳 룸키 결제 가능 · 체크아웃 시 카드',
+detail:'조식포함 · 성인2+아이2 · 자전거 무료대여 · 셔틀버스 무료\n야타이무라·시기라 비치·온천·류큐엔 모두 리조트 내',status:'confirmed',color:'purple'},
+{id:'r5',icon:'🤿',name:'스노클링 투어',date:'2026.4.27 (월)',time:'10:00 집합 / 10:30 출발 / 약 2시간',resId:'GAR519074',
+location:'시기라 비치 제2주차장 집합',mapUrl:'https://www.google.com/maps/dir/?api=1&destination=24.7202654,125.34084670000001&travelmode=driving',
+site:'예약사이트 확인',siteUrl:'',
+prep:'수영복 미리 착용 · 워터슈즈 · 선크림 (물에 잘 안 지워지는 제품) · 방수 카메라',cash:'💴 현금 지참 권장 (현장 추가 옵션)',
+detail:'4인 예약 · 바다거북 조우 확률 높음!\n마스크·스노클·핀 장비 제공',status:'confirmed',color:'teal'},
+{id:'r6',icon:'🏍️',name:'트라이커 트라이크 2대',date:'2026.4.28 (화)',time:'⚠️ 08:30 집합 / 09:00 시작 / 19:00 반납 고정',resId:'예약 ID: 721',
+location:'〒906-0505 沖縄県宮古島市伊良部国仲162',mapUrl:'https://maps.app.goo.gl/wgCjCcGLPyY2igYTA',
+site:'트라이커 (전화 예약)',siteUrl:'tel:090-4584-2020',
+prep:'국제운전면허증 2개 (부부 모두!) · GoPro MAX 충전 확인 · 선크림 · 워터슈즈',cash:'💴 현금 ¥40,000 필수 (현장결제)',
+detail:'1일(10h) · GoPro MAX 2기 포함 · ☎ 090-4584-2020\n⚠️ 30분 전(08:30) 집합 필수 - 늦으면 렌탈시간 단축!\n렌터카는 트라이크 샵에 주차',status:'confirmed',color:'orange'},
+{id:'r7',icon:'🔥',name:'류큐엔 숯불구이',date:'2026.4.29 (수)',time:'20:15 · 4인 예약완료',resId:'예약완료',
+location:'〒906-0203 沖縄県宮古島市上野宮国974-7 · 리조트 내',mapUrl:'https://maps.google.com/?cid=5306391224645787748',
+site:'시기라 리조트 공식 홈페이지',siteUrl:'https://www.miyakojima-resort.co.jp',
+prep:'예약 시간 확인 (20:15) · 복장 자유',cash:'💳 룸키 결제 가능 (카드)',
+detail:'⭐4.4 · 미야코 소 숯불구이 · 리조트 내 시설\n20:15 예약 → 정글 나이트 투어 21:00 연결',status:'confirmed',color:'red'},
+{id:'r8',icon:'🌙',name:'KKday 정글 나이트 투어',date:'2026.4.29 (수)',time:'21:00 집합 / 약 2시간',resId:'KKday 바우처 수신완료',
+location:'바우처 확인 (집합 장소 KKday 바우처에 명시)',mapUrl:'https://www.google.com/maps/dir/?api=1&destination=24.7583225,125.36443129999999&travelmode=driving',
+site:'KKday',siteUrl:'https://www.kkday.com',
+prep:'⚠️ KKday 바우처 스크린샷 저장 필수 · 긴 소매·긴 바지 (모기 대비) · 운동화 · 손전등/핸드폰 손전등',cash:'💳 KKday 선결제 완료 (현장 불필요)',
+detail:'COCO 미야코지마 운영 · 야자게·개구리·도마뱀\n⛈️ 비 와도 OK! 오히려 생물 더 많이 출몰',status:'confirmed',color:'darkblue'}
+];
 
-const SHOPPING_ITEMS=[{id:'si1',where:'airport',icon:'🥃',name:'산토리 로얄 위스키 700ml',qty:'최대 4병',img:'https://images.unsplash.com/photo-1567016376408-0226e4d0c1ea?w=200&h=140&fit=crop',note:'출국 면세점 · 부부 각 2병'},{id:'si2',where:'airport',icon:'💄',name:'랑콤 UV 엑스페르 톤업 로즈',qty:'1개',img:'https://images.unsplash.com/photo-1556228578-8c89e6adf883?w=200&h=140&fit=crop',note:'SPF50+ · 면세점 최저가'},{id:'si3',where:'airport',icon:'🚬',name:'담배',qty:'최대 2보루',img:'https://images.unsplash.com/photo-1528914741534-92ebf3b08c38?w=200&h=140&fit=crop',note:'1인 1보루 한도'},{id:'si4',where:'korea',icon:'👙',name:'아들 수영복',qty:'1개',img:'https://images.unsplash.com/photo-1516733968668-dbdce39c4651?w=200&h=140&fit=crop',note:'한국에서 미리 구입'},{id:'si5',where:'maxvalu',icon:'🐟',name:'치타라 까망베르 대용량',qty:'1개',img:'https://images.unsplash.com/photo-1621939514649-280e2ee25f60?w=200&h=140&fit=crop',note:'なとり · 냉장코너'},{id:'si6',where:'maxvalu',icon:'🍺',name:'오리온 맥주',qty:'적당히',img:'https://images.unsplash.com/photo-1608270586620-248524c67de9?w=200&h=140&fit=crop',note:'오키나와 현지 맥주'},{id:'si7',where:'maxvalu',icon:'🍜',name:'미야코 소바 컵라면',qty:'적당히',img:'https://images.unsplash.com/photo-1569050467447-ce54b3bbc37d?w=200&h=140&fit=crop',note:'현지 한정 맛'},{id:'si8',where:'maxvalu',icon:'🍱',name:'도시락·사시미',qty:'4인분',img:'https://images.unsplash.com/photo-1547592180-85f173990554?w=200&h=140&fit=crop',note:'Day1 저녁'},{id:'si9',where:'maxvalu',icon:'🍬',name:'흑설탕 과자·베니이모 타르트',qty:'적당히',img:'https://images.unsplash.com/photo-1553279768-865429fa0078?w=200&h=140&fit=crop',note:'오키나와 한정'},{id:'si10',where:'maxvalu',icon:'🍦',name:'블루실 컵아이스',qty:'4개',img:'https://images.unsplash.com/photo-1563805042-7684c019e1cb?w=200&h=140&fit=crop',note:'냉동코너 Day1'},{id:'si11',where:'donki',icon:'🎰',name:'Joy Jungle 가챠 용돈',qty:'아이 각 ¥1,000~2,000',img:'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=200&h=140&fit=crop',note:'현금 준비'},{id:'si12',where:'donki',icon:'✂️',name:'손톱깎이 (카이인)',qty:'2개',img:'https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=200&h=140&fit=crop',note:'貝印 브랜드 추천'},{id:'si13',where:'donki',icon:'💊',name:'동전파스 (로이히츠보코)',qty:'1개',img:'https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=200&h=140&fit=crop',note:'ロイヒつぼ膏'},{id:'si14',where:'donki',icon:'🧊',name:'쿨링시트 아이용',qty:'1개',img:'https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=200&h=140&fit=crop',note:'熱さまシート こども用'},{id:'si15',where:'donki',icon:'🦟',name:'모기패치 (무히패치)',qty:'1개',img:'https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=200&h=140&fit=crop',note:'ムヒパッチ'},{id:'si16',where:'donki',icon:'🥭',name:'미야코 망고잼',qty:'1개',img:'https://images.unsplash.com/photo-1519996529931-28324d5a630e?w=200&h=140&fit=crop',note:'현지 한정'},{id:'si17',where:'donki',icon:'🧂',name:'미야코지마 설염 (雪塩)',qty:'1개',img:'https://images.unsplash.com/photo-1556909212-d5b604d0c90d?w=200&h=140&fit=crop',note:'파라다이스플랜'},{id:'si18',where:'donki',icon:'💴',name:'면세 합산 체크',qty:'¥5,000↑',img:'https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?w=200&h=140&fit=crop',note:'외국인 면세 10% 환급'}];
+const SHOPPING_ITEMS=[{id:'si3',where:'airport',icon:'🚬',name:'담배',qty:'최대 2보루',note:'공항 면세점 · 부부 각 1보루'},{id:'si4',where:'korea',icon:'👙',name:'아들 수영복',qty:'1개',note:'한국에서 미리 구입'},{id:'si5',where:'maxvalu',icon:'🐟',name:'치타라 까망베르 대용량',qty:'1개',note:'なとり · 냉장코너'},{id:'si5b',where:'maxvalu',icon:'🥃',name:'산토리 로얄 위스키 700ml',qty:'최대 4병',note:'현지 마트 구입 · 부부 각 2병'},{id:'si6',where:'maxvalu',icon:'🍺',name:'오리온 맥주',qty:'적당히',note:'오키나와 현지 맥주'},{id:'si7',where:'maxvalu',icon:'🍜',name:'미야코 소바 컵라면',qty:'적당히',note:'현지 한정 맛'},{id:'si8',where:'maxvalu',icon:'🍱',name:'도시락·사시미',qty:'4인분',note:'Day1 저녁'},{id:'si9',where:'maxvalu',icon:'🍬',name:'흑설탕 과자·베니이모 타르트',qty:'적당히',note:'오키나와 한정'},{id:'si10',where:'maxvalu',icon:'🍦',name:'블루실 컵아이스',qty:'4개',note:'냉동코너 Day1'},{id:'si11',where:'donki',icon:'🎰',name:'Joy Jungle 가챠 용돈',qty:'아이 각 ¥1,000~2,000',note:'현금 준비'},{id:'si12',where:'donki',icon:'✂️',name:'손톱깎이 (카이인)',qty:'2개',note:'貝印 브랜드 추천'},{id:'si13',where:'donki',icon:'💊',name:'동전파스 (로이히츠보코)',qty:'1개',note:'ロイヒつぼ膏'},{id:'si14',where:'donki',icon:'🧊',name:'쿨링시트 아이용',qty:'1개',note:'熱さまシート こども用'},{id:'si15',where:'donki',icon:'🦟',name:'모기패치 (무히패치)',qty:'1개',note:'ムヒパッチ'},{id:'si16',where:'donki',icon:'🥭',name:'미야코 망고잼',qty:'1개',note:'현지 한정'},{id:'si17',where:'donki',icon:'🧂',name:'미야코지마 설염 (雪塩)',qty:'1개',note:'파라다이스플랜'},{id:'si18',where:'donki',icon:'💴',name:'면세 합산 체크',qty:'¥5,000↑',note:'외국인 면세 10% 환급'}];
 
 // ========= STATE =========
 const KEY='miyako2026v3';
@@ -422,9 +524,7 @@ function makeCard(item,dayId){
     <div class="drag-handle" title="드래그로 순서 변경">⠿</div>
   </div>`;
 
-  if(item.imgs&&item.imgs.length){
-    html+=`<div class="c-imgs">${item.imgs.map(s=>`<img class="c-img" src="${s}" alt="" loading="lazy" onerror="this.style.display='none'">`).join('')}</div>`;
-  }
+
   if(item.menu&&item.menu.length){
     html+=`<div class="c-menu"><div class="menu-lbl">🍽️ 추천 메뉴</div><div class="menu-chips">${item.menu.map(m=>`<span class="chip">${m.n}${m.note?`<em>${m.note}</em>`:''}</span>`).join('')}</div></div>`;
   }
@@ -458,22 +558,74 @@ function renderReservations(){
     const memo=ST['rmemo_'+r.id]||'';
     const div=document.createElement('div');
     div.className='res-card';
+    const mapBtn=r.mapUrl?`<a class="res-map-btn" href="${r.mapUrl}" target="_blank">🗺️ 지도</a>`:'';
+    const siteBtn=r.siteUrl?`<a class="res-map-btn" href="${r.siteUrl}" target="_blank">🔗 ${r.site||'예약사이트'}</a>`:'';
     div.innerHTML=`<div class="res-header">
       <div class="res-ico-bg ${colorMap[r.color]||'bg-blue'}">${r.icon}</div>
       <div class="res-title">
         <div class="res-name">${r.name}</div>
-        <div class="res-date">${r.date} · ${r.time}</div>
+        <div class="res-date">${r.date}</div>
       </div>
       <span class="res-badge">✅ 완료</span>
     </div>
     <div class="res-body">
-      <div class="res-field"><div class="res-label">예약 ID</div><div class="res-value">${r.resId}</div></div>
-      <div class="res-field"><div class="res-label">상세</div><div class="res-value" style="white-space:pre-line">${r.detail}</div></div>
+      <div class="res-field"><div class="res-label">예약번호</div><div class="res-value res-id">${r.resId}</div></div>
+      <div class="res-field"><div class="res-label">일시</div><div class="res-value">${r.time}</div></div>
+      <div class="res-field"><div class="res-label">집결장소</div><div class="res-value">${r.location||'-'} ${mapBtn}</div></div>
+      <div class="res-field"><div class="res-label">예약사이트</div><div class="res-value">${r.site||'-'} ${siteBtn}</div></div>
+      <div class="res-field"><div class="res-label">준비물</div><div class="res-value res-prep">${r.prep||'-'}</div></div>
+      <div class="res-field"><div class="res-label">결제</div><div class="res-value res-cash">${r.cash||'-'}</div></div>
+      <div class="res-field"><div class="res-label">상세</div><div class="res-value" style="white-space:pre-line;color:var(--mu)">${r.detail}</div></div>
       <div class="res-memo-lbl">📝 메모</div>
-      <textarea class="memo-tx${memo?' filled':''}" placeholder="예약 상세 메모 (바우처번호, 픽업장소 등)..." oninput="saveResMemo('${r.id}',this);autoResize(this)">${memo}</textarea>
+      <textarea class="memo-tx${memo?' filled':''}" placeholder="추가 메모 (바우처번호, 변경사항 등)..." oninput="saveResMemo('${r.id}',this);autoResize(this)">${memo}</textarea>
     </div>`;
     root.appendChild(div);
   });
+}
+
+function renderCkReservations(){
+  const root=document.getElementById('ck-res-section');
+  if(!root)return;
+  const saved=JSON.parse(localStorage.getItem(KEY+'_res')||'null')||RESERVATIONS_DEFAULT;
+  const confirmed=saved.filter(r=>r.status==='confirmed');
+  if(!confirmed.length){root.innerHTML='';return;}
+  let html=`<div style="font-size:11px;font-weight:700;color:var(--gr);margin-bottom:6px;padding:2px 0;">✅ 예약 완료 ${confirmed.length}건</div>`;
+  confirmed.forEach(r=>{
+    const memo=ST['rmemo_'+r.id]||'';
+    const hasCash=r.cash&&r.cash.includes('현금');
+    html+=`<div class="ck-res-card">
+      <div class="ck-res-hd" onclick="toggleCkRes('${r.id}')">
+        <div class="ck-res-ico">${r.icon}</div>
+        <div class="ck-res-info">
+          <div class="ck-res-name">${r.name}</div>
+          <div class="ck-res-time">${r.date} · ${r.time}</div>
+        </div>
+        <span class="ck-res-badge">✅ 완료</span>
+        <span class="ck-res-toggle" id="ck-tog-${r.id}">▾</span>
+      </div>
+      <div class="ck-res-body" id="ck-body-${r.id}">
+        <div class="ck-res-row"><div class="ck-res-lbl">예약번호</div><div class="ck-res-val" style="font-weight:700;color:var(--oc)">${r.resId}</div></div>
+        ${r.location?`<div class="ck-res-row"><div class="ck-res-lbl">집결장소</div><div class="ck-res-val">${r.location}${r.mapUrl?`<br><a class="ck-res-mapbtn" href="${r.mapUrl}" target="_blank">🗺️ 지도 열기</a>`:''}</div></div>`:''}
+        ${r.site?`<div class="ck-res-row"><div class="ck-res-lbl">예약사이트</div><div class="ck-res-val">${r.siteUrl?`<a class="ck-res-mapbtn" href="${r.siteUrl}" target="_blank">🔗 ${r.site}</a>`:r.site}</div></div>`:''}
+        ${r.prep?`<div class="ck-res-row"><div class="ck-res-lbl">준비물</div><div class="ck-res-val"><div class="ck-res-prep">${r.prep}</div></div></div>`:''}
+        ${r.cash?`<div class="ck-res-row"><div class="ck-res-lbl">결제</div><div class="ck-res-val ck-res-cash${hasCash?'':' card'}">${r.cash}</div></div>`:''}
+        ${r.detail?`<div class="ck-res-row"><div class="ck-res-lbl">상세</div><div class="ck-res-val" style="color:var(--mu);white-space:pre-line">${r.detail}</div></div>`:''}
+        <div class="ck-res-memo">
+          <div class="ck-res-memo-lbl">📝 메모</div>
+          <textarea class="memo-tx${memo?' filled':''}" placeholder="메모..." oninput="saveResMemo('${r.id}',this);autoResize(this)">${memo}</textarea>
+        </div>
+      </div>
+    </div>`;
+  });
+  root.innerHTML=html;
+  // restore autoResize after render
+  root.querySelectorAll('.memo-tx').forEach(el=>{if(el.value)autoResize(el);});
+}
+function toggleCkRes(id){
+  const body=document.getElementById('ck-body-'+id);
+  const tog=document.getElementById('ck-tog-'+id);
+  const open=body.classList.toggle('open');
+  if(tog)tog.classList.toggle('open',open);
 }
 
 function renderShopping(){
@@ -495,7 +647,6 @@ function renderShopping(){
       const done=ST['sh_'+item.id]||false;
       html+=`<div class="sh-item">
         <div class="sh-cb${done?' ok':''}" onclick="tShop(this,'${item.id}')">${done?'✓':''}</div>
-        <img class="sh-img" src="${item.img}" alt="${item.name}" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1542838132-92c53300491e?w=200&h=140&fit=crop'">
         <div class="sh-info"><div class="sh-name">${item.icon} ${item.name}</div><div class="sh-note">${item.note}</div></div>
         <div class="sh-qty">${item.qty}</div>
       </div>`;
@@ -522,7 +673,13 @@ function showResForm(){
     <div class="rf-row"><div class="rf-label">날짜</div><input class="rf-input" id="rf-date" placeholder="예) 2026.4.28 (화)"></div>
     <div class="rf-row"><div class="rf-label">시간</div><input class="rf-input" id="rf-time" placeholder="예) 18:00"></div>
     <div class="rf-row"><div class="rf-label">예약 번호</div><input class="rf-input" id="rf-resid" placeholder="예약번호 또는 확인번호"></div>
-    <div class="rf-row"><div class="rf-label">상세 내용</div><textarea class="rf-input" id="rf-detail" rows="3" placeholder="주소, 전화번호, 주의사항 등..."></textarea></div>
+    <div class="rf-row"><div class="rf-label">집결장소</div><input class="rf-input" id="rf-location" placeholder="주소 또는 집합 장소 설명"></div>
+    <div class="rf-row"><div class="rf-label">지도 URL</div><input class="rf-input" id="rf-mapurl" placeholder="구글맵 URL (선택)"></div>
+    <div class="rf-row"><div class="rf-label">예약사이트</div><input class="rf-input" id="rf-site" placeholder="예) KKday, tablecheck.com 등"></div>
+    <div class="rf-row"><div class="rf-label">사이트 URL</div><input class="rf-input" id="rf-siteurl" placeholder="예약 사이트 URL (선택)"></div>
+    <div class="rf-row"><div class="rf-label">준비물</div><input class="rf-input" id="rf-prep" placeholder="예) 여권 · 현금 · 바우처 지참"></div>
+    <div class="rf-row"><div class="rf-label">현금/결제</div><input class="rf-input" id="rf-cash" placeholder="예) 💴 현금 ¥40,000 필수 또는 💳 카드결제"></div>
+    <div class="rf-row"><div class="rf-label">상세 내용</div><textarea class="rf-input" id="rf-detail" rows="3" placeholder="전화번호, 주의사항 등..."></textarea></div>
     <div class="rf-acts"><button class="rf-save" onclick="saveNewRes()">저장</button><button class="rf-cancel" onclick="cancelResForm()">취소</button></div>
   </div>`;
   wrap.scrollIntoView({behavior:'smooth'});
@@ -533,11 +690,24 @@ function saveNewRes(){
   const name=document.getElementById('rf-name').value.trim();
   if(!name){toast('이름을 입력하세요');return;}
   const saved=JSON.parse(localStorage.getItem(KEY+'_res')||'null')||[...RESERVATIONS_DEFAULT];
-  const newR={id:'r'+(Date.now()),icon:selIcon,name,date:document.getElementById('rf-date').value,time:document.getElementById('rf-time').value,resId:document.getElementById('rf-resid').value,detail:document.getElementById('rf-detail').value,status:'confirmed',color:selColor};
+  const newR={
+    id:'r'+(Date.now()),icon:selIcon,name,color:selColor,status:'confirmed',
+    date:document.getElementById('rf-date').value,
+    time:document.getElementById('rf-time').value,
+    resId:document.getElementById('rf-resid').value,
+    location:document.getElementById('rf-location').value,
+    mapUrl:document.getElementById('rf-mapurl').value,
+    site:document.getElementById('rf-site').value,
+    siteUrl:document.getElementById('rf-siteurl').value,
+    prep:document.getElementById('rf-prep').value,
+    cash:document.getElementById('rf-cash').value,
+    detail:document.getElementById('rf-detail').value
+  };
   saved.push(newR);
   localStorage.setItem(KEY+'_res',JSON.stringify(saved));
   cancelResForm();
   renderReservations();
+  renderCkReservations();
   toast('✅ 예약 추가됨!');
 }
 function cancelResForm(){document.getElementById('res-form-wrap').style.display='none';}
@@ -581,9 +751,9 @@ function tBag(row){
   const d=cb.classList.toggle('ok');
   cb.textContent=d?'✓':'';
   row.classList.toggle('done',d);
-bagDone = document.querySelectorAll('#s1 .cklist:first-of-type .cb.ok').length;
+  bagDone=document.querySelectorAll('#s1 .cklist .cb.ok').length;
   document.getElementById('c2').textContent=bagDone;
-  document.getElementById('bagpb').style.width=(bagDone/10*100)+'%';
+  document.getElementById('bagpb').style.width=(bagDone/25*100)+'%';
   dirty();
 }
 function tAirport(row){
@@ -642,7 +812,7 @@ async function saveAll(){
   const state={...ST};
   // bag checks
   const bags=[];
-  document.querySelectorAll('#s1 #baglist .cb').forEach(cb=>bags.push(cb.classList.contains('ok')));
+  document.querySelectorAll('#s1 .cklist .cb').forEach(cb=>bags.push(cb.classList.contains('ok')));
   state._bags=bags;
   // airport checks
   const air=[];
@@ -655,18 +825,32 @@ async function saveAll(){
   });
   // ice
   document.querySelectorAll('.ice-cb').forEach(el=>{
-  state['ice_'+el.dataset.id]=el.classList.contains('ok');
-});
-localStorage.setItem(KEY,JSON.stringify(state));
+    state['ice_'+el.dataset.id]=el.classList.contains('ok');
+  });
+  // reservations (custom added)
+  const resData=localStorage.getItem(KEY+'_res');
+  if(resData) state._res=JSON.parse(resData);
+  // card order
+  const orderData=localStorage.getItem(KEY+'_order');
+  if(orderData) state._order=JSON.parse(orderData);
 
-if(window.tripFirebase){
-  await window.tripFirebase.setDoc(window.tripFirebase.tripRef, state);
-}
+  localStorage.setItem(KEY,JSON.stringify(state));
 
-Object.assign(ST,state);
+  // Firebase 저장
+  if(window.tripFirebase){
+    try{
+      await window.tripFirebase.setDoc(window.tripFirebase.tripRef, state);
+      document.getElementById('sinfo').textContent='☁️ Firebase 저장됨 '+new Date().toLocaleTimeString('ko-KR',{hour:'2-digit',minute:'2-digit'});
+    } catch(e){
+      console.warn('Firebase 저장 실패, 로컬만 저장:', e);
+      document.getElementById('sinfo').textContent='💾 로컬 저장됨 (Firebase 오류)';
+    }
+  } else {
+    document.getElementById('sinfo').textContent='💾 로컬 저장됨 '+new Date().toLocaleTimeString('ko-KR',{hour:'2-digit',minute:'2-digit'});
+  }
+
+  Object.assign(ST,state);
   isDirty=false;
-  const now=new Date().toLocaleTimeString('ko-KR',{hour:'2-digit',minute:'2-digit'});
-  document.getElementById('sinfo').textContent='저장됨 '+now;
   document.getElementById('sbtn').classList.add('ok');
   document.getElementById('sbtn').textContent='✅ 저장완료';
   toast('💾 저장 완료!');
@@ -679,12 +863,12 @@ function loadState(){
   Object.assign(ST,s);
   // bags
   if(s._bags){
-    document.querySelectorAll('#s1 #baglist .cb').forEach((cb,i)=>{
+    document.querySelectorAll('#s1 .cklist .cb').forEach((cb,i)=>{
       if(s._bags[i]){cb.classList.add('ok');cb.textContent='✓';cb.closest('.ck-row').classList.add('done');}
     });
-    bagDone = document.querySelectorAll('#s1 .cklist:first-of-type .cb.ok').length;
+    bagDone=document.querySelectorAll('#s1 .cklist .cb.ok').length;
     document.getElementById('c2').textContent=bagDone;
-    document.getElementById('bagpb').style.width=(bagDone/10*100)+'%';
+    document.getElementById('bagpb').style.width=(bagDone/25*100)+'%';
   }
   // airport
   if(s._air){
@@ -704,6 +888,16 @@ function loadState(){
   // shopping count
   const done=Object.keys(s).filter(k=>k.startsWith('sh_')&&s[k]).length;
   document.getElementById('c3').textContent=done;
+  // reservations 복원
+  if(s._res){
+    localStorage.setItem(KEY+'_res', JSON.stringify(s._res));
+    renderReservations();
+    renderCkReservations();
+  }
+  // card order 복원
+  if(s._order){
+    localStorage.setItem(KEY+'_order', JSON.stringify(s._order));
+  }
   document.getElementById('sinfo').textContent='데이터 불러옴';
 }
 
@@ -723,6 +917,7 @@ window.addEventListener('beforeunload',e=>{if(isDirty){e.preventDefault();e.retu
 document.addEventListener('DOMContentLoaded',()=>{
   renderSchedule();
   renderReservations();
+  renderCkReservations();
   renderShopping();
   loadState();
   // Apply saved done states and memos to cards
@@ -741,18 +936,25 @@ document.addEventListener('DOMContentLoaded',()=>{
   // Auto resize all memos
   document.querySelectorAll('.memo-tx').forEach(el=>{if(el.value)autoResize(el);});
 
-if(window.tripFirebase){
-  window.tripFirebase.onSnapshot(window.tripFirebase.tripRef, (docSnap)=>{
-    if(docSnap.exists()){
-      if(isDirty) return;
-      const data = docSnap.data();
-      Object.assign(ST, data);
-      renderSchedule();
-      renderReservations();
-      renderShopping();
-    }
-  });
-}
+  // Firebase 실시간 동기화 (다른 기기에서 저장하면 자동 반영)
+  if(window.tripFirebase){
+    window.tripFirebase.onSnapshot(window.tripFirebase.tripRef, (docSnap)=>{
+      if(isDirty) return; // 내가 편집 중이면 덮어쓰지 않음
+      if(docSnap.exists()){
+        const data=docSnap.data();
+        Object.assign(ST, data);
+        localStorage.setItem(KEY, JSON.stringify(data));
+        if(data._res) localStorage.setItem(KEY+'_res', JSON.stringify(data._res));
+        if(data._order) localStorage.setItem(KEY+'_order', JSON.stringify(data._order));
+        renderSchedule();
+        renderReservations();
+        renderCkReservations();
+        renderShopping();
+        document.getElementById('sinfo').textContent='☁️ 클라우드에서 동기화됨';
+      }
+    });
+    console.log('Firebase 실시간 동기화 활성화');
+  }
 });
 </script>
 </body>
